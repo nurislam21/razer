@@ -2,6 +2,7 @@ $lime: #0f0;
 $black: #000;
 $gray: #888;
 $white: #ffff;
+$black2:#1f1f1f;
 .header-bg {
   width: 100%;
   background-color: $black;
@@ -37,9 +38,8 @@ $white: #ffff;
 .navigation {
   display: flex;
   margin-top: 20px;
-  margin-left: 300px;
+  justify-content: space-evenly;
   &-logo {
-    margin-right: 310px;
     display: flex;
     justify-content: flex-start;
     img{
@@ -64,7 +64,6 @@ $white: #ffff;
   }
 
   &-icons {
-    margin-left: 229px;
     display: flex;
     justify-content: flex-end;
     img {
@@ -76,7 +75,6 @@ $white: #ffff;
 }
 
 .text {
-  //background: linear-gradient(black , black, white);
   background: linear-gradient(180deg, #000, rgba(0, 0, 0, 0));
   width: 100%;
   display: flex;
@@ -135,3 +133,102 @@ $white: #ffff;
   }
 }
 
+.footer{
+  display: flex;
+  background-color: $black2;
+  width: 100%;
+  padding: 3.125rem 0.625rem;
+  justify-content: space-evenly;
+  &-column1{
+    &-one{
+      div{
+        color: $white;
+        font-size:16px;
+        transition-duration: 0.3s;
+        &:hover{
+          color: $lime;
+          cursor: pointer;
+        }
+      }
+      span{
+        color: $gray;
+      }
+    }
+    &-two{
+      display: flex;
+      flex-direction: column;
+      div{
+        color: $white;
+        font-size:16px;
+        margin-top: 20px;
+        transition-duration: 0.3s;
+        &:hover{
+          color: $lime;
+          cursor: pointer;
+        }
+      }
+      span{
+        color: $gray;
+      }
+    }
+  }
+  &-column2{
+    display: flex;
+    flex-direction: column;
+    div{
+      color: $white;
+      font-size: 16px;
+    }
+    span{
+      color: $gray;
+      margin-top: 10px;
+      transition-duration: 0.2s;
+      &:hover{
+        color: $white;
+        cursor: pointer;
+      }
+    }
+  }
+  &-column3{
+    display: flex;
+    flex-direction: column;
+    div{
+      color: $white;
+      font-size: 16px;
+    }
+    span{
+      color: $gray;
+      margin-top: 10px;
+      transition-duration: 0.2s;
+      &:hover{
+        color: $white;
+        cursor: pointer;
+      }
+    }
+  }
+  &-column4{
+    display: flex;
+    flex-direction: column;
+    p{
+      color: $white;
+      font-size: 16px;
+    }
+    img{
+      width: 21px;
+      height: 20px;
+    }
+    span{
+      margin-left: 5px;
+      color: $gray;
+      transition-duration: 0.2s;
+      &:hover{
+        color: $white;
+        cursor: pointer;
+      }
+    }
+    &-item{
+      display: flex;
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -5,8 +5,8 @@ const routes = [
     component: () => import('pages/Main')
   },
   {
-    path:'/carusel',
-    component: () => import('components/Carusel')
+    path:'/mouse',
+    component: () => import('components/Mouse')
   },
   // Always leave this as last one,
   // but you can also remove it
