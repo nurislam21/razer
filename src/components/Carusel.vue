@@ -1,13 +1,18 @@
 <template>
-    <div>
+  <div>
 
-    </div>
+  </div>
 </template>
-
 <script>
+  import { ref } from 'vue'
     export default {
-        name: "Carusel"
-    }
+        name: "Carusel",
+        setup () {
+          return {
+            slide: ref(1)
+          }
+        }
+      }
 </script>
 
 <style scoped>

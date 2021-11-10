@@ -4,6 +4,10 @@ const routes = [
     path:'/',
     component: () => import('pages/Main')
   },
+  {
+    path:'/carusel',
+    component: () => import('components/Carusel')
+  },
   // Always leave this as last one,
   // but you can also remove it
   {
