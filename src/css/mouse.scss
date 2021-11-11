@@ -123,9 +123,12 @@ $black2: #1f1f1f;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 100px;
     &-title{
       color: $black;
       font-size: 28px;
+        margin-bottom: 0;
+      margin-top: 50px;
     }
     &-description{
       font-size: 16px;
@@ -133,5 +136,51 @@ $black2: #1f1f1f;
       color: $gray;
       width: 780px;
     }
+  }
+  &-two{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    &-title{
+      color: $black;
+      font-size: 28px;
+      margin-bottom: 0;
+    }
+    &-description{
+      font-size: 16px;
+      line-height: 1.5;
+      color: $gray;
+      width: 780px;
+    }
+  }
+  &-three{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    &-title{
+      color: $black;
+      font-size: 28px;
+      margin-bottom: 0;
+    }
+    &-description{
+      font-size: 16px;
+      line-height: 1.5;
+      color: $gray;
+      width: 780px;
+    }
+  }
+}
+.mouseimg{
+  img{
+    width: 100%;
+    margin-top: 70px;
+  }
+}
+.mouseimgs{
+  img{
   }
 }

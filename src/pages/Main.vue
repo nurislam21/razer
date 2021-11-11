@@ -1,36 +1,5 @@
 <template>
-  <div class="header-bg">
-    <div class="header">
-      <div class="header-login">
-        Войдите
-      </div>
-      <div class="header-and">
-        или
-      </div>
-      <div class="header-reg">
-        Зарегистрируйтесь
-      </div>
-    </div>
-
-    <div class="navigation">
-      <div class="navigation-logo">
-        <img src="../assets/razerlogo.svg" alt="">
-      </div>
-      <div class="navigation-panel">
-        <p>ПК</p>
-        <p>Мобильные</p>
-        <p>Лайфстайл</p>
-        <p>Магазин</p>
-        <p>Поддержка</p>
-      </div>
-      <div class="navigation-icons">
-        <img src="../assets/search.svg" alt="">
-        <img src="../assets/asd.png" alt="">
-        <img src="../assets/basket.svg" alt="">
-      </div>
-    </div>
-  </div>
-
+<Header style="position: fixed; z-index: 5"/>
   <div class="q-pa-md">
     <q-carousel
       style="height: 700px"
@@ -66,7 +35,7 @@
           </div>
         </div>
       </q-carousel-slide>
-      <q-carousel-slide :name="3" img-src="https://static.razer.ru/237701/blackshark-v2-pro-white-1500x1000-4.jpg" >
+      <q-carousel-slide @click="headphones" :name="3" img-src="https://static.razer.ru/237701/blackshark-v2-pro-white-1500x1000-4.jpg" >
         <div class="text">
           <div class="text-title">
             Беспроводная киберспортивная гарнитура. Теперь и в белом.
@@ -76,7 +45,7 @@
           </div>
         </div>
       </q-carousel-slide>
-      <q-carousel-slide :name="4" img-src="https://static.razer.ru/236989/hammerhead-true-wireless-1500x1000-2.jpg" >
+      <q-carousel-slide @click="hammer" :name="4" img-src="https://static.razer.ru/236989/hammerhead-true-wireless-1500x1000-2.jpg" >
         <div class="text">
           <div class="text-title">
             Выделись из толпы: Bluetooth-гарнитура с настраиваемой подсветкой Razer Chroma™ RGB и активным шумоподавлением ANC.
@@ -171,9 +140,13 @@
   </div>
 </template>
 <script>
+  import Header from "../components/Header";
     import {defineComponent,ref} from 'vue'
     export default defineComponent({
         name: "Main",
+      components:{
+          Header
+      },
       setup () {
         return {
           slide: ref(1)
@@ -181,10 +154,16 @@
       },
       methods:{
         mouse(){
-          this.$router.push('/mouse');
+          this.$router.push('/mouse')
         },
         keyboard(){
-
+          this.$router.push('/keyboard')
+        },
+        headphones(){
+          this.$router.push('/headphones')
+        },
+        hammer(){
+          this.$router.push('/hammer')
         }
       }
     })

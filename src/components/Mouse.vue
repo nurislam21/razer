@@ -1,40 +1,8 @@
 <template>
-  <div class="header-bg">
-    <div class="header">
-      <div class="header-login">
-        Войдите
-      </div>
-      <div class="header-and">
-        или
-      </div>
-      <div class="header-reg">
-        Зарегистрируйтесь
-      </div>
-    </div>
-
-    <div class="navigation">
-      <div class="navigation-logo">
-        <router-link to="/">
-          <img src="../assets/razerlogo.svg" alt="">
-        </router-link>
-      </div>
-      <div class="navigation-panel">
-        <p>ПК</p>
-        <p>Мобильные</p>
-        <p>Лайфстайл</p>
-        <p>Магазин</p>
-        <p>Поддержка</p>
-      </div>
-      <div class="navigation-icons">
-        <img src="../assets/search.svg" alt="">
-        <img src="../assets/asd.png" alt="">
-        <img src="../assets/basket.svg" alt="">
-      </div>
-    </div>
-  </div>
+  <Header style="position: fixed; z-index: 5"/>
   <div class="q-pa-md">
     <q-carousel
-      style="height: 700px; width: 81%"
+      style="height: 700px; width: 81%; top: 100px"
       swipeable
       animated
       v-model="slide"
@@ -90,14 +58,41 @@
   <div class="text-one">
      <h2 class="text-one-title">ПОБЕЖДАЙТЕ НА РАБОТЕ</h2>
     <div class="text-one-description">Сделайте мир своим офисом с Razer Pro Click Mini — идеальной мышью для эффективной работы в дороге. Благодаря бесшумным щелчкам и удобной форме в компактном корпусе этот маленький помощник идеально дополнит ваш рабочий день, где бы вы ни находились.</div>
+
+    <h2 class="text-one-title">МАКСИМАЛЬНАЯ ПРОДУКТИВНОСТЬ. МИНИМАЛЬНЫЙ ШУМ</h2>
+    <div class="text-one-description">Бесшумные механические переключатели этой мыши позволят вам и окружающим вас в офисе или дома работать в тишине без отвлекающих факторов, а ее сверхпрочная конструкция обеспечит ресурс до 15 миллионов щелчков.
+    </div>
+  </div>
+  <div class="mouseimg">
+    <img src="../assets/mouse1.jpg" alt="">
+  </div>
+  <div class="text-two">
+    <h2 class="text-two-title">АБСОЛЮТНАЯ ПОРТАТИВНОСТЬ</h2>
+    <div class="text-two-description">Элегантный и стильный корпус мыши легко поместится в рюкзак или портфель, что позволит вам максимально повысить продуктивность и эффективность работы независимо от того, находитесь ли вы в офисе или дома.</div>
+  </div>
+  <div class="mouseimg">
+    <img src="../assets/mouse2.jpg" alt="">
+  </div>
+  <div class="text-three">
+    <h2 class="text-three-title">НЕПРИНУЖДЕННАЯ НАВИГАЦИЯ</h2>
+    <div class="text-three-description">Колесо прокрутки обеспечивает удобную навигацию: вы можете переключаться между режимом свободного вращения, если просматриваете длинные веб-страницы или документы, и режимом тактильной прокрутки, когда нужна точность прокрутки, а также использовать наклонное нажатие колеса для прокрутки по горизонтали.</div>
+  </div>
+  <div class="mouseimgs">
+    <img src="../assets/mouse3.jpg" alt="">
+    <img src="../assets/mouse4.jpg" alt="">
+    <img src="../assets/mouse5.jpg" alt="">
   </div>
 </template>
 
 <script>
+  import Header from "./Header";
   import {defineComponent, ref} from 'vue'
 
   export default defineComponent({
     name: "Mouse",
+    components:{
+      Header
+    },
     setup() {
       return {
         slide: ref(1)
