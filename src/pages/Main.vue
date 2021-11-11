@@ -30,6 +30,7 @@
       </div>
     </div>
   </div>
+
   <div class="q-pa-md">
     <q-carousel
       style="height: 700px"
@@ -45,7 +46,7 @@
       @mouseenter="autoplay = false"
       @mouseleave="autoplay = true"
     >
-      <q-carousel-slide :name="1" img-src="https://static.razer.ru/238400/pro-click-mini-gallery-1500x1000-6.jpg" >
+      <q-carousel-slide @click="mouse" :name="1" img-src="https://static.razer.ru/238400/pro-click-mini-gallery-1500x1000-6.jpg" >
         <div class="text">
         <div class="text-title">
           Побеждайте на работе.
@@ -55,7 +56,7 @@
         </div>
       </div>
       </q-carousel-slide>
-      <q-carousel-slide :name="2" img-src="https://static.razer.ru/237614/blackwidow-v3-mini-hyperspeed-phantom-1500x1000-4.jpg" >
+      <q-carousel-slide @click="keyboard" :name="2" img-src="https://static.razer.ru/237614/blackwidow-v3-mini-hyperspeed-phantom-1500x1000-4.jpg" >
         <div class="text">
           <div class="text-title">
             Беспроводная. 65% формат. Ещё больше подсветки Razer Chroma™ RGB.
@@ -87,6 +88,7 @@
       </q-carousel-slide>
     </q-carousel>
   </div>
+
   <div class="banners">
     <div class="banners-item">
       <img src="../assets/banner1.jpg" alt="">
@@ -121,6 +123,7 @@
       </div>
     </div>
   </div>
+
   <div class="footer">
     <div class="footer-column1">
       <div class="footer-column1-one">
@@ -174,6 +177,14 @@
       setup () {
         return {
           slide: ref(1)
+        }
+      },
+      methods:{
+        mouse(){
+          this.$router.push('/mouse');
+        },
+        keyboard(){
+
         }
       }
     })
