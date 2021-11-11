@@ -43,22 +43,22 @@
       navigation-position="left"
     >
 
-      <q-carousel-slide :name="1" img-src="https://static.razer.ru/238327/pro-click-mini-gallery-1500x1000-1.jpg"/>
-      <q-carousel-slide :name="2" img-src="https://static.razer.ru/238395/pro-click-mini-gallery-1500x1000-2.jpg"/>
-      <q-carousel-slide :name="3" img-src="https://static.razer.ru/238396/pro-click-mini-gallery-1500x1000-3.jpg"/>
-      <q-carousel-slide :name="4" img-src="https://static.razer.ru/238397/pro-click-mini-gallery-1500x1000-4.jpg"/>
-      <q-carousel-slide :name="5" img-src="https://static.razer.ru/238398/pro-click-mini-gallery-1500x1000-5.jpg"/>
-      <q-carousel-slide :name="6" img-src="https://static.razer.ru/238400/pro-click-mini-gallery-1500x1000-6.jpg"/>
+      <q-carousel-slide :name="1" img-src="https://static.razer.ru/235668/razer-blackwidow-v3-mini-hyperspeed-hero-photo.jpg"/>
+      <q-carousel-slide :name="2" img-src="https://static.razer.ru/237614/blackwidow-v3-mini-hyperspeed-phantom-1500x1000-4.jpg"/>
+      <q-carousel-slide :name="3" img-src="https://static.razer.ru/235739/razer-blackwidow-v3-mini-hyperspeed-1500x1000-01.jpg"/>
+      <q-carousel-slide :name="4" img-src="https://static.razer.ru/237616/blackwidow-v3-mini-hyperspeed-phantom-1500x1000-6.jpg"/>
+      <q-carousel-slide :name="5" img-src="https://static.razer.ru/237617/blackwidow-v3-mini-hyperspeed-phantom-1500x1000-1.jpg"/>
+      <q-carousel-slide :name="6" img-src="https://static.razer.ru/235743/razer-blackwidow-v3-mini-hyperspeed-1500x1000-05.jpg"/>
     </q-carousel>
   </div>
   <div class="bgbuy">
     <div class="buy">
       <div class="buy-title">
-        <div class="buy-title-raz">Razer Pro Click Mini</div>
-        <span>Артикул: RZ01-03990100-R3G1</span>
+        <div class="buy-title-raz">Razer BlackWidow V3 Mini HyperSpeed (Green Switch) Phantom Edition</div>
+        <span>Артикул: RZ03-03892000-R3M1</span>
       </div>
       <div class="buy-price">
-        <div class="buy-price-rub">6 190 <img src="../assets/rub.svg" alt=""></div>
+        <div class="buy-price-rub">17 990 <img src="../assets/rub.svg" alt=""></div>
       </div>
       <div class="buy-btn">
         <p>В КОРЗИНУ</p>
@@ -74,7 +74,7 @@
       <div class="buy-item1">
         <img src="../assets/buy.svg" alt="">
         <div class="buy-item1-title">
-          <span>Купи сейчас за 1548 ₽, плати потом Долями.</span>
+          <span>Купи сейчас за 4498 ₽, плати потом Долями.</span>
           Равные платежи без процентов 2 раза в месяц.
         </div>
       </div>
@@ -87,17 +87,14 @@
       </div>
     </div>
   </div>
-  <div class="text-one">
-     <h2 class="text-one-title">ПОБЕЖДАЙТЕ НА РАБОТЕ</h2>
-    <div class="text-one-description">Сделайте мир своим офисом с Razer Pro Click Mini — идеальной мышью для эффективной работы в дороге. Благодаря бесшумным щелчкам и удобной форме в компактном корпусе этот маленький помощник идеально дополнит ваш рабочий день, где бы вы ни находились.</div>
-  </div>
+
 </template>
 
 <script>
   import {defineComponent, ref} from 'vue'
 
   export default defineComponent({
-    name: "Mouse",
+    name: "Keyboard",
     setup() {
       return {
         slide: ref(1)
@@ -114,3 +111,4 @@
     width: 100%;
   }
 </style>
+
