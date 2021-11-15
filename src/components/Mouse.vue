@@ -2,7 +2,7 @@
   <Header style="position: fixed; z-index: 5"/>
   <div class="q-pa-md">
     <q-carousel
-      style="height: 700px; width: 81%; top: 100px"
+      style="height: 100vh; width: 81%; top: 100px"
       swipeable
       animated
       v-model="slide"
@@ -82,16 +82,66 @@
     <img src="../assets/mouse4.jpg" alt="">
     <img src="../assets/mouse5.jpg" alt="">
   </div>
+  <div class="textimgs">
+    <div class="textimgs-item">ТАКТИЛЬНЫЙ РЕЖИМ</div>
+    <div class="textimgs-item" style="width: 300px">РЕЖИМ СВОБОДНОГО ВРАЩЕНИЯ</div>
+    <div class="textimgs-item">БОКОВЫЕ НАКЛОНЫ</div>
+  </div>
+  <div class="mouseimg">
+    <img src="../assets/mouse6.jpg" alt="">
+  </div>
+  <div class="text-four">
+    <h2>ВСЯ МОЩЬ ПРИ ДЛИТЕЛЬНОЙ РАБОТЕ</h2>
+    <p>2 беспроводных режима</p>
+    <span>Эта сверхлегкая мышь создана для повседневной работы, чтобы проработать всю рабочую неделю и дольше.</span>
+  </div>
+  <div class="icons">
+    <div class="icons-item">
+      <img src="../assets/blututh.png" alt="">
+      <div>ДО 725 ЧАСОВ</div>
+      <p>Измерено с 2 щелочными AA батареями</p>
+    </div>
+    <div class="icons-item">
+      <img src="../assets/lightning.png" alt="">
+      <div>ДО 465 ЧАСОВ</div>
+      <p>Измерено с 2 щелочными AA батареями</p>
+    </div>
+  </div>
+  <div class="mouseimg">
+    <img src="../assets/mouse7.jpg" alt="">
+  </div>
+  <div class="text-five">
+    <div>РАБОТАЕТ С 1 ИЛИ 2 БАТАРЕЙКАМИ ТИПА АА</div>
+    <p>Для работы требуется только одна батарея типа АА – выберите экстра лёгкость с одной батареей типа АА или увеличьте время
+      <br> автономной работы с двумя батареями типа АА.</p>
+  </div>
+  <div class="mouseimg">
+    <img src="../assets/mouse8.jpg" alt="">
+  </div>
+  <div class="text-six">
+    <h2>ТЕХНОЛОГИЯ БЕСПРОВОДНОГО ПОДКЛЮЧЕНИЯ RAZER™ HYPERSPEED</h2>
+    <p>Благодаря применению передовой в отрасли беспроводной технологии, наслаждайтесь быстрой и надежной <br>производительностью, которая обеспечивает вам большую свободу и эффективность работы, сохраняя при этом рабочее
+      <br> пространство свободным от кабелей. С помощью беспроводного передатчика, предназначенного для подключения <br> беспроводной мыши и клавиатуры, вы можете еще больше упростить настройку и освободить один USB-порт на вашем ПК или
+      <br> ноутбуке для других устройств.</p>
+    <img src="../assets/lightning.png" alt="">
+    <img src="../assets/lightning1.png" alt="">
+  </div>
+  <div class="mouseimg">
+    <img src="../assets/mouse9.jpg" alt="">
+  </div>
+  <Footer />
 </template>
 
 <script>
   import Header from "./Header";
+  import Footer from "./Footer";
   import {defineComponent, ref} from 'vue'
 
   export default defineComponent({
     name: "Mouse",
     components:{
-      Header
+      Header,
+      Footer
     },
     setup() {
       return {

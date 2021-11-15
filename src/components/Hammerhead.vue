@@ -2,7 +2,7 @@
   <Header style="position: fixed; z-index: 5"/>
   <div class="q-pa-md">
     <q-carousel
-      style="height: 700px; width: 81%"
+      style="height: 100vh; width: 81%; top: 100px"
       swipeable
       animated
       v-model="slide"
@@ -55,6 +55,46 @@
       </div>
     </div>
   </div>
+  <div class="block">
+    <div class="block-odin">
+      <div class="block-odin-title">ОСВЕТИТЕ СВОЕ ПОГРУЖЕНИЕ</div>
+      <div class="block-odin-description">Осветите свое погружение с помощью новых беспроводных наушников Razer
+        Hammerhead <br> True Wireless - новейших наушников, призванных доминировать на звуковой сцене. С этой
+        <br> беспроводной гарнитурой, созданной для ослепления сиянием RGB-подсветки и <br> оснащенной функцией
+        активного шумоподавления ANC и игровым режимом с низкой
+        <br> задержкой 60 мс, вы будьте готовы к невероятному качеству звука.
+      </div>
+      <div class="block-odin-img">
+        <img src="../assets/razer-chroma-rgb-logo.png" alt="">
+      </div>
+    </div>
+    <div class="block-dva">
+      <div class="block-dva-title">ПОДДЕРЖКА RAZER CHROMA™ RGB</div>
+      <div class="block-dva-description">С 16,8 миллионами цветов и набором эффектов на выбор, подчеркните свой стиль и
+        выделитесь из толпы с помощью
+        <br> совершенных беспроводных наушников с гибкой настройкой.
+      </div>
+      <div class="block-dva-dva">
+        <div class="block-dva-dva-title">ТЕХНОЛОГИЯ АКТИВНОГО ШУМОПОДАВЛЕНИЯ ANC</div>
+        <div class="block-dva-dva-description">Если вы слушаете любимые треки, играете или смотрите фильм, устраните все отвлекающие факторы с помощью активного
+          <br> шумоподавления, которое обнаруживает и нейтрализует нежелательные окружающие шумы.
+        </div>
+      </div>
+    </div>
+    <div class="block-tri"></div>
+    <div class="block-chitiri">
+      <div class="block-dva-dva-title">ТЕХНОЛОГИЯ АКТИВНОГО ШУМОПОДАВЛЕНИЯ ANC</div>
+      <div class="block-dva-dva-description">Если вы слушаете любимые треки, играете или смотрите фильм, устраните все отвлекающие факторы с помощью активного
+        <br> шумоподавления, которое обнаруживает и нейтрализует нежелательные окружающие шумы.
+      </div>
+    </div>
+    <div class="block-pyat">
+
+    </div>
+    <div class="block-shest">
+
+    </div>
+  </div>
 
 </template>
 
@@ -64,7 +104,7 @@
 
   export default defineComponent({
     name: "Hammerhead",
-    components:{
+    components: {
       Header
     },
     setup() {

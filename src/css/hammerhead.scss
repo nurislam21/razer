@@ -1,0 +1,86 @@
+$lime: #0f0;
+$lime2: #268926;
+$lime3: #44d62c;
+$black: #000;
+$gray: #888;
+$gray2: #9a9a9a;
+$white: #ffff;
+$black2: #1f1f1f;
+
+.block{
+  &-odin{
+    background-color: $black;
+    width: 100%;
+    height: 539px;
+    margin-top: 369px;
+    &-title{
+      color: $lime3;
+      font-size: 27px;
+      padding-top: 70px;
+      text-align: center;
+    }
+    &-description{
+      color: $gray;
+      text-align: center;
+      margin-top: 10px;
+      font-size: 17px;
+    }
+    &-img{
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+  }
+  &-dva{
+    background-image: url("../assets/razer-hammerhead-true-wireless-chroma-desktop-usp1.jpg");
+    width: 100%;
+    height: 580px;
+    &-title{
+      color: $lime3;
+      font-size: 27px;
+      padding-top: 70px;
+      text-align: center;
+    }
+    &-description{
+      color: $gray;
+      text-align: center;
+      margin-top: 10px;
+      font-size: 17px;
+    }
+    &-dva{
+      background-color: $black;
+      width: 100%;
+      height: 200px;
+      margin-top: 410px;
+      &-title{
+        color: $lime3;
+        font-size: 27px;
+        text-align: center;
+        padding-top: 40px;
+      }
+      &-description{
+        color: $gray;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 17px;
+      }
+    }
+  }
+  &-tri{
+    background-image: url("../assets/razer-hammerhead-girl.jpg");
+    width: 100%;
+    height: 890px;
+    margin-top: 200px;
+  }
+  &-chitiri{
+    background-color: $black;
+    width: 100%;
+    height: 214px;
+  }
+  &-pyat{
+
+  }
+  &-shest{
+
+  }
+}
