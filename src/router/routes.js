@@ -8,7 +8,7 @@ const routes = [
     // }
   },
   {
-    path:'/mouse',
+    path:'/product-detail',
     params: true,
     component: () => import('components/Mouse')
   },

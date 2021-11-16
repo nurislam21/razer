@@ -151,35 +151,27 @@
     },
     data () {
       return {
-        protuctType: '',
+        productType: '',
         products: [
           {
-            mouse: {
-              title: 'Razer Pro Click Mini',
-              articul: 'RZ01-03990100-R3G1',
-              price: '6 190',
-            },
+            title: 'Razer Pro Click Mini',
+            articul: 'RZ01-03990100-R3G1',
+            price: '6 190',
+            type: 'mouse'
           },
           {
-            keyboard: {
-              title: 'Razer Pro Click Mini',
-              articul: 'RZ01-03990100-R3G1',
-            },
-          }
+            title: 'keyboard Razer Pro Click Mini',
+            articul: 'keyboard RZ01-03990100-R3G1',
+            type: 'keyboard'
+          },
         ]
-
       }
     },
     computed: {
-      getProduct () {
-        return this.products.map((pr)=>{
-          return pr[this.protuctType]
-        })
-      }
     },
-    mounted() {
-      this.protuctType = this.$route.query.product
-      console.log('ROUTE', this.$route.query.product)
+    created() {
+      this.productType = this.$route.query.product
+      console.log(this.$route.query.product)
     }
   })
 </script>
