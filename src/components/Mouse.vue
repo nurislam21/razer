@@ -162,18 +162,21 @@
           {
             title: 'keyboard Razer Pro Click Mini',
             articul: 'keyboard RZ01-03990100-R3G1',
+            price: '17 990',
             type: 'keyboard'
           },
           {
-            title: 'keyboard Razer Pro Click Mini',
-            articul: 'keyboard RZ01-03990100-R3G1',
+            title: 'Razer BlackShark V2 Pro - White Edition',
+            articul: 'RZ04-03220300-R3M1',
+            price: '16 990',
             type: 'headphones'
           },
-          // {
-          //   title: 'keyboard Razer Pro Click Mini',
-          //   articul: 'keyboard RZ01-03990100-R3G1',
-          //   type: 'headphones'
-          // },
+          {
+            title: 'Razer Hammerhead True Wireless (2021)',
+            articul: 'RZ12-03820100-R3G1',
+            price: '13 490',
+            type: 'hammer'
+          },
         ]
       }
     },

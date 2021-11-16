@@ -113,7 +113,7 @@
       },
       methods:{
         showDetail(type){
-          this.$router.push({path: '/product-detail', query: {product: type}})
+          this.$router.push({path: `/${type}`, })
         },
       }
     })

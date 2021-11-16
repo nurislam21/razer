@@ -3,13 +3,14 @@ const routes = [
   {
     path:'/',
     component: () => import('pages/Main'),
-    // children:{
-    //
-    // }
   },
+  // {
+  //   path:'/product-detail',
+  //   params: true,
+  //   component: () => import('components/Mouse')
+  // },
   {
-    path:'/product-detail',
-    params: true,
+    path:'/mouse',
     component: () => import('components/Mouse')
   },
   {
