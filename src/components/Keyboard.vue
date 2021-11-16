@@ -99,7 +99,8 @@
       return {
         slide: ref(1)
       }
-    }
+    },
+
   })
 </script>
 

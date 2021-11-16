@@ -9,6 +9,7 @@ const routes = [
   },
   {
     path:'/mouse',
+    params: true,
     component: () => import('components/Mouse')
   },
   {

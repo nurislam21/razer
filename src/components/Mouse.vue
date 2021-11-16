@@ -54,7 +54,7 @@
   <div class="bgbuy">
     <div class="buy">
       <div class="buy-title">
-        <div class="buy-title-raz">Razer Pro Click Mini</div>
+        <div class="buy-title-raz"> {{getProduct}}</div>
         <span>Артикул: RZ01-03990100-R3G1</span>
       </div>
       <div class="buy-price">
@@ -88,6 +88,7 @@
     </div>
   </div>
   <div class="text-one">
+
      <h2 class="text-one-title">ПОБЕЖДАЙТЕ НА РАБОТЕ</h2>
     <div class="text-one-description">Сделайте мир своим офисом с Razer Pro Click Mini — идеальной мышью для эффективной работы в дороге. Благодаря бесшумным щелчкам и удобной форме в компактном корпусе этот маленький помощник идеально дополнит ваш рабочий день, где бы вы ни находились.</div>
   </div>
@@ -102,6 +103,38 @@
       return {
         slide: ref(1)
       }
+    },
+    data () {
+      return {
+        protuctType: '',
+        products: [
+          {
+            mouse: {
+              title: 'Razer Pro Click Mini',
+              articul: 'RZ01-03990100-R3G1',
+              price: '6 190',
+            },
+          },
+          {
+            keyboard: {
+              title: 'Razer Pro Click Mini',
+              articul: 'RZ01-03990100-R3G1',
+            },
+          }
+        ]
+
+      }
+    },
+    computed: {
+      getProduct () {
+        return this.products.map((pr)=>{
+          return pr[this.protuctType]
+        })
+      }
+    },
+    mounted() {
+      this.protuctType = this.$route.query.product
+      console.log('ROUTE', this.$route.query.product)
     }
   })
 </script>
