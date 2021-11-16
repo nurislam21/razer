@@ -1,0 +1,142 @@
+$lime: #0f0;
+$lime2: #268926;
+$lime3: #44d62c;
+$black: #000;
+$gray: #888;
+$gray2: #9a9a9a;
+$white: #ffff;
+$black2: #1f1f1f;
+
+.block{
+  &-odin{
+    background-color: $black;
+    width: 100%;
+    height: 539px;
+    margin-top: 369px;
+    &-title{
+      color: $lime3;
+      font-size: 27px;
+      padding-top: 70px;
+      text-align: center;
+    }
+    &-description{
+      color: $gray;
+      text-align: center;
+      margin-top: 10px;
+      font-size: 17px;
+    }
+    &-img{
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+  }
+  &-dva{
+    background-image: url("../assets/razer-hammerhead-true-wireless-chroma-desktop-usp1.jpg");
+    width: 100%;
+    height: 580px;
+    &-title{
+      color: $lime3;
+      font-size: 27px;
+      padding-top: 70px;
+      text-align: center;
+    }
+    &-description{
+      color: $gray;
+      text-align: center;
+      margin-top: 10px;
+      font-size: 17px;
+    }
+    &-dva{
+      background-color: $black;
+      width: 100%;
+      height: 200px;
+      margin-top: 410px;
+      &-title{
+        color: $lime3;
+        font-size: 27px;
+        text-align: center;
+        padding-top: 40px;
+      }
+      &-description{
+        color: $gray;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 17px;
+      }
+    }
+  }
+  &-tri{
+    background-image: url("../assets/razer-hammerhead-girl.jpg");
+    width: 100%;
+    height: 890px;
+    margin-top: 200px;
+  }
+  &-chitiri{
+    background-color: $black;
+    width: 100%;
+    height: 214px;
+  }
+  &-pyat{
+    background-image: url("../assets/razer-hammerhead-true-wireless-low-latency-desktop.jpg");
+    width: 100%;
+    height: 778px;
+  }
+  &-shest{
+    background-image: url("../assets/razer-hammerhead-true.jpg");
+    width: 100%;
+    height: 700px;
+    &-title{
+      color: $lime3;
+      font-size: 27px;
+      text-align: center;
+      padding-top: 40px;
+    }
+    &-description{
+      color: $gray;
+      text-align: center;
+      margin-top: 10px;
+      font-size: 17px;
+    }
+    }
+  &-sem{
+    background-color: $black;
+    width: 100%;
+    height: 214px;
+    &-title{
+      color: $lime3;
+      font-size: 27px;
+      text-align: center;
+      padding-top: 40px;
+    }
+    &-description{
+      color: $gray;
+      text-align: center;
+      margin-top: 10px;
+      font-size: 17px;
+    }
+  }
+  &-vosem{
+    background-image: url("../assets/razer-hammerhead-boy.jpg");
+    width: 100%;
+    height: 890px;
+  }
+  &-devat{
+    background-image: url("../assets/razer-hammerhead-phone.jpg");
+    width: 100%;
+    height: 778px;
+  }
+  &-desat{
+    background-color: #111;
+    width: 100%;
+    height: 260px;
+    &-img{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img{
+        margin-top: 100px;
+      }
+    }
+  }
+}

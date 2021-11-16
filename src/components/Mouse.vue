@@ -1,40 +1,8 @@
 <template>
-  <div class="header-bg">
-    <div class="header">
-      <div class="header-login">
-        Войдите
-      </div>
-      <div class="header-and">
-        или
-      </div>
-      <div class="header-reg">
-        Зарегистрируйтесь
-      </div>
-    </div>
-
-    <div class="navigation">
-      <div class="navigation-logo">
-        <router-link to="/">
-          <img src="../assets/razerlogo.svg" alt="">
-        </router-link>
-      </div>
-      <div class="navigation-panel">
-        <p>ПК</p>
-        <p>Мобильные</p>
-        <p>Лайфстайл</p>
-        <p>Магазин</p>
-        <p>Поддержка</p>
-      </div>
-      <div class="navigation-icons">
-        <img src="../assets/search.svg" alt="">
-        <img src="../assets/asd.png" alt="">
-        <img src="../assets/basket.svg" alt="">
-      </div>
-    </div>
-  </div>
+  <Header style="position: fixed; z-index: 5"/>
   <div class="q-pa-md">
     <q-carousel
-      style="height: 700px; width: 81%"
+      style="height: 100vh; width: 81%; top: 100px"
       swipeable
       animated
       v-model="slide"
@@ -91,14 +59,91 @@
 
      <h2 class="text-one-title">ПОБЕЖДАЙТЕ НА РАБОТЕ</h2>
     <div class="text-one-description">Сделайте мир своим офисом с Razer Pro Click Mini — идеальной мышью для эффективной работы в дороге. Благодаря бесшумным щелчкам и удобной форме в компактном корпусе этот маленький помощник идеально дополнит ваш рабочий день, где бы вы ни находились.</div>
+
+    <h2 class="text-one-title">МАКСИМАЛЬНАЯ ПРОДУКТИВНОСТЬ. МИНИМАЛЬНЫЙ ШУМ</h2>
+    <div class="text-one-description">Бесшумные механические переключатели этой мыши позволят вам и окружающим вас в офисе или дома работать в тишине без отвлекающих факторов, а ее сверхпрочная конструкция обеспечит ресурс до 15 миллионов щелчков.
+    </div>
   </div>
+  <div class="mouseimg">
+    <img src="../assets/mouse1.jpg" alt="">
+  </div>
+  <div class="text-two">
+    <h2 class="text-two-title">АБСОЛЮТНАЯ ПОРТАТИВНОСТЬ</h2>
+    <div class="text-two-description">Элегантный и стильный корпус мыши легко поместится в рюкзак или портфель, что позволит вам максимально повысить продуктивность и эффективность работы независимо от того, находитесь ли вы в офисе или дома.</div>
+  </div>
+  <div class="mouseimg">
+    <img src="../assets/mouse2.jpg" alt="">
+  </div>
+  <div class="text-three">
+    <h2 class="text-three-title">НЕПРИНУЖДЕННАЯ НАВИГАЦИЯ</h2>
+    <div class="text-three-description">Колесо прокрутки обеспечивает удобную навигацию: вы можете переключаться между режимом свободного вращения, если просматриваете длинные веб-страницы или документы, и режимом тактильной прокрутки, когда нужна точность прокрутки, а также использовать наклонное нажатие колеса для прокрутки по горизонтали.</div>
+  </div>
+  <div class="mouseimgs">
+    <img src="../assets/mouse3.jpg" alt="">
+    <img src="../assets/mouse4.jpg" alt="">
+    <img src="../assets/mouse5.jpg" alt="">
+  </div>
+  <div class="textimgs">
+    <div class="textimgs-item">ТАКТИЛЬНЫЙ РЕЖИМ</div>
+    <div class="textimgs-item" style="width: 300px">РЕЖИМ СВОБОДНОГО ВРАЩЕНИЯ</div>
+    <div class="textimgs-item">БОКОВЫЕ НАКЛОНЫ</div>
+  </div>
+  <div class="mouseimg">
+    <img src="../assets/mouse6.jpg" alt="">
+  </div>
+  <div class="text-four">
+    <h2>ВСЯ МОЩЬ ПРИ ДЛИТЕЛЬНОЙ РАБОТЕ</h2>
+    <p>2 беспроводных режима</p>
+    <span>Эта сверхлегкая мышь создана для повседневной работы, чтобы проработать всю рабочую неделю и дольше.</span>
+  </div>
+  <div class="icons">
+    <div class="icons-item">
+      <img src="../assets/blututh.png" alt="">
+      <div>ДО 725 ЧАСОВ</div>
+      <p>Измерено с 2 щелочными AA батареями</p>
+    </div>
+    <div class="icons-item">
+      <img src="../assets/lightning.png" alt="">
+      <div>ДО 465 ЧАСОВ</div>
+      <p>Измерено с 2 щелочными AA батареями</p>
+    </div>
+  </div>
+  <div class="mouseimg">
+    <img src="../assets/mouse7.jpg" alt="">
+  </div>
+  <div class="text-five">
+    <div>РАБОТАЕТ С 1 ИЛИ 2 БАТАРЕЙКАМИ ТИПА АА</div>
+    <p>Для работы требуется только одна батарея типа АА – выберите экстра лёгкость с одной батареей типа АА или увеличьте время
+      <br> автономной работы с двумя батареями типа АА.</p>
+  </div>
+  <div class="mouseimg">
+    <img src="../assets/mouse8.jpg" alt="">
+  </div>
+  <div class="text-six">
+    <h2>ТЕХНОЛОГИЯ БЕСПРОВОДНОГО ПОДКЛЮЧЕНИЯ RAZER™ HYPERSPEED</h2>
+    <p>Благодаря применению передовой в отрасли беспроводной технологии, наслаждайтесь быстрой и надежной <br>производительностью, которая обеспечивает вам большую свободу и эффективность работы, сохраняя при этом рабочее
+      <br> пространство свободным от кабелей. С помощью беспроводного передатчика, предназначенного для подключения <br> беспроводной мыши и клавиатуры, вы можете еще больше упростить настройку и освободить один USB-порт на вашем ПК или
+      <br> ноутбуке для других устройств.</p>
+    <img src="../assets/lightning.png" alt="">
+    <img src="../assets/lightning1.png" alt="">
+  </div>
+  <div class="mouseimg">
+    <img src="../assets/mouse9.jpg" alt="">
+  </div>
+  <Footer />
 </template>
 
 <script>
+  import Header from "./Header";
+  import Footer from "./Footer";
   import {defineComponent, ref} from 'vue'
 
   export default defineComponent({
     name: "Mouse",
+    components:{
+      Header,
+      Footer
+    },
     setup() {
       return {
         slide: ref(1)

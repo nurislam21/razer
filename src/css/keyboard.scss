@@ -1,0 +1,87 @@
+$lime: #0f0;
+$lime2: #268926;
+$lime3:#44d62c;
+$black: #000;
+$gray: #888;
+$gray2:#9a9a9a;
+$white: #ffff;
+$black2: #1f1f1f;
+
+.texts{
+  margin-top: 369px;
+  background-color: $black;
+  width: 100%;
+  &-lime{
+    color: $lime3;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 80px;
+    font-family: RazerF5,serif;
+    margin-bottom: 10px;
+  }
+  &-gray{
+    text-align: center;
+    font-size: 18px;
+    color: $gray2;
+  }
+  &-img{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  &-keyboard{
+    text-align: center;
+    margin-top: 100px;
+    &-title{
+      color: $white;
+      font-size: 18px;
+      text-align: center;
+      font-family: Roboto,Helvetica,Arial,sans-serif;
+      margin-bottom: 10px;
+    }
+    &-description{
+      margin-top: 10px;
+      color: $white;
+      font-size: 19px;
+      margin-bottom: 30px;
+      font-family: Roboto,Helvetica,Arial,sans-serif;
+    }
+  }
+  &-text{
+    margin-top: 70px;
+    img{
+      width: 100%;
+    }
+  }
+  &-image{
+    background-image: url("../assets/razer-blackwidow-v3-mini-hyperspeed-usp2-desktop.jpg");
+    width: 100%;
+    height: 90vh;
+    padding-top: 40px;
+  }
+  &-cocacola{
+    display: flex;
+    justify-content: center;
+  }
+  &-icons{
+    display: flex;
+    flex-direction: column;
+    &-item{
+      text-align: center;
+      margin: 50px 40px 20px 40px;
+      &-lime{
+        font-size: 24px;
+        color: $lime3;
+      }
+      &-gray{
+        color: $gray;
+        font-size: 18px;
+      }
+    }
+  }
+  &-keyboardmouse{
+    img{
+      width: 100%;
+    }
+  }
+}

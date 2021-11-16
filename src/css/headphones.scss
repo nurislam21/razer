@@ -1,0 +1,207 @@
+$lime: #0f0;
+$lime2: #268926;
+$lime3: #44d62c;
+$black: #000;
+$gray: #888;
+$gray2: #9a9a9a;
+$white: #ffff;
+$black2: #1f1f1f;
+
+.fanta {
+  margin-top: 400px;
+
+  &-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  &-description {
+    color: $gray;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  &-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
+
+.black {
+  &-odin {
+    background-image: url("../assets/razer-blackshark-v2-pro-avail-in-desktop.jpeg");
+    width: 100%;
+    height: 600px;
+
+    &-title {
+      color: $lime3;
+      font-size: 28px;
+      text-align: center;
+      padding-top: 50px;
+      margin-top: 80px;
+    }
+
+    &-item {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+
+      &-black {
+        font-size: 18px;
+        color: $lime3;
+      }
+
+      &-white {
+        font-size: 18px;
+        color: $gray;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+
+      &-da {
+        font-size: 18px;
+        color: $lime3;
+      }
+    }
+  }
+
+  &-dva {
+    background-image: url("../assets/razer-blackshark-v2-pro-white-edition-hyperspeed.jpg");
+    width: 100%;
+    height: 800px;
+
+    &-title {
+      font-size: 26px;
+      color: $lime3;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    &-description {
+      text-align: center;
+      color: $white;
+      font-size: 17px;
+      margin-top: 10px;
+    }
+
+    &-img {
+      display: flex;
+      justify-content: center;
+      margin-top: 60px;
+    }
+  }
+
+  &-tri {
+    background-image: url("../assets/razer-blackshark-v2-pro-white-edition-triforce-drivers-ru.jpg");
+    width: 100%;
+    height: 800px;
+
+    &-title {
+      font-size: 28px;
+      color: $lime3;
+      text-align: center;
+      padding-top: 45px;
+    }
+
+    &-description {
+      text-align: center;
+      font-size: 17px;
+      margin-top: 25px;
+      color: $white;
+    }
+  }
+
+  &-chitiri {
+    background-image: url("../assets/razer-blackshark-v2-pro-white-edition-hyperclear-mic-ru.jpg");
+    width: 100%;
+    height: 800px;
+
+    &-title {
+      font-size: 28px;
+      color: $lime3;
+      text-align: center;
+      padding-top: 45px;
+    }
+
+    &-description {
+      text-align: center;
+      font-size: 17px;
+      margin-top: 25px;
+      color: $white;
+    }
+  }
+
+  &-pyat {
+    background-image: url("../assets/razer-blackshark-v2-pro-white-edition-noise-cancellation.jpg");
+    width: 100%;
+    height: 800px;
+
+    &-title {
+      font-size: 28px;
+      color: $lime3;
+      text-align: center;
+      padding-top: 45px;
+    }
+
+    &-description {
+      text-align: center;
+      font-size: 17px;
+      margin-top: 25px;
+      color: $white;
+    }
+  }
+
+  &-shest{
+
+    background-image: url("../assets/razer-blackshark-v2-pro-white-edition-flowknit-memory-foam.jpg");
+    width: 100%;
+    height: 800px;
+    &-title {
+      font-size: 30px;
+      color: $black;
+      text-align: center;
+      padding-top: 45px;
+    }
+
+    &-description {
+      margin-top: 16px;
+      text-align: center;
+      font-size: 18px;
+      color: $black;
+      font-family: Roboto,Helvetica,Arial,sans-serif;
+      font-weight: 300;
+    }
+  }
+
+  &-sem{
+    background-color: $black;
+    width: 100%;
+    height: 246px;
+    &-item{
+      display: flex;
+      justify-content: center;
+      &-block{
+        text-align: center;
+        margin: 50px;
+        div{
+          color: $gray;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  &-vosem{
+    background-image: url("../assets/product-desktop-family-v2.jpg");
+    width: 100%;
+    height: 556px;
+    div{
+      color: $white;
+      font-size: 30px;
+      text-align: center;
+      padding-top: 40px;
+    }
+  }
+}

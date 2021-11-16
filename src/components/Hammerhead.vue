@@ -1,40 +1,8 @@
 <template>
-  <div class="header-bg">
-    <div class="header">
-      <div class="header-login">
-        Войдите
-      </div>
-      <div class="header-and">
-        или
-      </div>
-      <div class="header-reg">
-        Зарегистрируйтесь
-      </div>
-    </div>
-
-    <div class="navigation">
-      <div class="navigation-logo">
-        <router-link to="/">
-          <img src="../assets/razerlogo.svg" alt="">
-        </router-link>
-      </div>
-      <div class="navigation-panel">
-        <p>ПК</p>
-        <p>Мобильные</p>
-        <p>Лайфстайл</p>
-        <p>Магазин</p>
-        <p>Поддержка</p>
-      </div>
-      <div class="navigation-icons">
-        <img src="../assets/search.svg" alt="">
-        <img src="../assets/asd.png" alt="">
-        <img src="../assets/basket.svg" alt="">
-      </div>
-    </div>
-  </div>
+  <Header style="position: fixed; z-index: 5"/>
   <div class="q-pa-md">
     <q-carousel
-      style="height: 700px; width: 81%"
+      style="height: 100vh; width: 81%; top: 100px"
       swipeable
       animated
       v-model="slide"
@@ -87,14 +55,82 @@
       </div>
     </div>
   </div>
-
+  <div class="block">
+    <div class="block-odin">
+      <div class="block-odin-title">ОСВЕТИТЕ СВОЕ ПОГРУЖЕНИЕ</div>
+      <div class="block-odin-description">Осветите свое погружение с помощью новых беспроводных наушников Razer
+        Hammerhead <br> True Wireless - новейших наушников, призванных доминировать на звуковой сцене. С этой
+        <br> беспроводной гарнитурой, созданной для ослепления сиянием RGB-подсветки и <br> оснащенной функцией
+        активного шумоподавления ANC и игровым режимом с низкой
+        <br> задержкой 60 мс, вы будьте готовы к невероятному качеству звука.
+      </div>
+      <div class="block-odin-img">
+        <img src="../assets/razer-chroma-rgb-logo.png" alt="">
+      </div>
+    </div>
+    <div class="block-dva">
+      <div class="block-dva-title">ПОДДЕРЖКА RAZER CHROMA™ RGB</div>
+      <div class="block-dva-description">С 16,8 миллионами цветов и набором эффектов на выбор, подчеркните свой стиль и
+        выделитесь из толпы с помощью
+        <br> совершенных беспроводных наушников с гибкой настройкой.
+      </div>
+      <div class="block-dva-dva">
+        <div class="block-dva-dva-title">ИГРОВОЙ РЕЖИМ С НИЗКОЙ ЗАДЕРЖКОЙ 60 МС</div>
+        <div class="block-dva-dva-description">Включите игровой режим, чтобы активировать лучшую производительность Razer Hammerhead True Wireless во время игр на
+          <br> устройствах Bluetooth для более безупречной работы.
+        </div>
+      </div>
+    </div>
+    <div class="block-tri"></div>
+    <div class="block-chitiri">
+      <div class="block-dva-dva-title">ТЕХНОЛОГИЯ АКТИВНОГО ШУМОПОДАВЛЕНИЯ ANC</div>
+      <div class="block-dva-dva-description">Если вы слушаете любимые треки, играете или смотрите фильм, устраните все отвлекающие факторы с помощью активного
+        <br> шумоподавления, которое обнаруживает и нейтрализует нежелательные окружающие шумы.
+      </div>
+    </div>
+    <div class="block-pyat"></div>
+    <div class="block-shest">
+      <div class="block-shest-title">ВНУТРИКАНАЛЬНЫЙ ДИЗАЙН</div>
+      <div class="block-shest-description">Получите удобную и надежную вставку в ухо, которая обеспечивает улучшенную шумоизоляцию с нашим новым дизайном.
+        <br> Включает вкладыши дополнительных размеров для индивидуального комфорта.</div>
+    </div>
+    <div class="block-sem">
+      <div class="block-sem-title">ENC МИКРОФОНЫ С ДВОЙНЫМ ПОДАВЛЕНИЕМ ОКРУЖАЮЩИХ ШУМОВ</div>
+      <div class="block-sem-description">Благодаря умным микрофонам, которые обнаруживают, идентифицируют и снижают нежелательный фоновый шум, голосовая
+        <br> связь с Razer Hammerhead True Wireless теперь четче, чем когда-либо.
+      </div>
+    </div>
+    <div class="block-vosem"></div>
+    <div class="block-sem">
+      <div class="block-sem-title">МОБИЛЬНОЕ ПРИЛОЖЕНИЕ ДЛЯ НАСТРОЙКИ</div>
+      <div class="block-sem-description">Получите максимум удовольствия от наушников с помощью приложения Razer Audio. Изменяйте настройки Razer Chroma™ RGB,
+        <br> переназначайте сенсорные жесты, настраивайте эквалайзер и получайте непрерывные улучшения с помощью беспроводных
+        <br> обновлений прошивки.
+      </div>
+    </div>
+    <div class="block-devat"></div>
+    <div class="block-desat">
+      <div class="block-desat-img">
+        <img src="../assets/razer-audio-app.png" alt="">
+        <img src="../assets/app-store.png" alt="">
+        <img src="../assets/google-play.png" alt="">
+      </div>
+    </div>
+  </div>
+  <Footer />
 </template>
 
 <script>
+  import Header from "./Header";
+  import Footer from "./Footer";
   import {defineComponent, ref} from 'vue'
 
   export default defineComponent({
     name: "Hammerhead",
+    components: {
+      Header,
+      Footer
+    },
     setup() {
       return {
         slide: ref(1)
