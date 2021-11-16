@@ -164,6 +164,16 @@
             articul: 'keyboard RZ01-03990100-R3G1',
             type: 'keyboard'
           },
+          {
+            title: 'keyboard Razer Pro Click Mini',
+            articul: 'keyboard RZ01-03990100-R3G1',
+            type: 'headphones'
+          },
+          // {
+          //   title: 'keyboard Razer Pro Click Mini',
+          //   articul: 'keyboard RZ01-03990100-R3G1',
+          //   type: 'headphones'
+          // },
         ]
       }
     },
