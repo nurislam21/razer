@@ -22,7 +22,7 @@
   <div class="bgbuy">
     <div class="buy">
       <div class="buy-title">
-        <div class="buy-title-raz"> {{getProduct}}</div>
+        <div class="buy-title-raz"> {{products.title}}</div>
         <span>Артикул: RZ01-03990100-R3G1</span>
       </div>
       <div class="buy-price">
