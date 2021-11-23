@@ -11,6 +11,7 @@
         <img src="../assets/asd.png" alt="">
         <div @click="basket" >
           <img src="../assets/basket.svg" alt="">
+
         </div>
       </div>
     </div>
