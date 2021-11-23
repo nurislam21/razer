@@ -4,10 +4,12 @@ const routes = [
   {
     path:'/',
     component: () => import('pages/Main'),
-    // children:{
-    //
-    // }
   },
+  // {
+  //   path:'/product-detail',
+  //   params: true,
+  //   component: () => import('components/Mouse')
+  // },
   {
     path:'/mouse',
     component: () => import('components/Mouse')

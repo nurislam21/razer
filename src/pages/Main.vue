@@ -14,47 +14,20 @@
       transition-next="slide-left"
       @mouseenter="autoplay = false"
       @mouseleave="autoplay = true"
+
     >
-      <q-carousel-slide @click="mouse" :name="1" img-src="https://static.razer.ru/238400/pro-click-mini-gallery-1500x1000-6.jpg" >
-        <div class="text">
-        <div class="text-title">
-          Побеждайте на работе.
-        </div>
-        <div class="text-description">
-          Razer Pro Click Mini
-        </div>
-      </div>
-      </q-carousel-slide>
-      <q-carousel-slide @click="keyboard" :name="2" img-src="https://static.razer.ru/237614/blackwidow-v3-mini-hyperspeed-phantom-1500x1000-4.jpg" >
-        <div class="text">
-          <div class="text-title">
-            Беспроводная. 65% формат. Ещё больше подсветки Razer Chroma™ RGB.
+      <template v-for="(info, ind) in slideInfo">
+        <q-carousel-slide @click="showDetail(info.type)" :name="ind" :img-src="info.pic" >
+          <div class="text">
+            <div class="text-title">
+              {{info.title}}
+            </div>
+            <div class="text-description">
+              {{info.description}}
+            </div>
           </div>
-          <div class="text-description">
-            Razer BlackWidow V3 Mini HyperSpeed — Phantom Edition
-          </div>
-        </div>
-      </q-carousel-slide>
-      <q-carousel-slide @click="headphones" :name="3" img-src="https://static.razer.ru/237701/blackshark-v2-pro-white-1500x1000-4.jpg" >
-        <div class="text">
-          <div class="text-title">
-            Беспроводная киберспортивная гарнитура. Теперь и в белом.
-          </div>
-          <div class="text-description">
-            Razer BlackShark V2 Pro - White Edition
-          </div>
-        </div>
-      </q-carousel-slide>
-      <q-carousel-slide @click="hammer" :name="4" img-src="https://static.razer.ru/236989/hammerhead-true-wireless-1500x1000-2.jpg" >
-        <div class="text">
-          <div class="text-title">
-            Выделись из толпы: Bluetooth-гарнитура с настраиваемой подсветкой Razer Chroma™ RGB и активным шумоподавлением ANC.
-          </div>
-          <div class="text-description">
-            Razer Hammerhead True Wireless (2021)
-          </div>
-        </div>
-      </q-carousel-slide>
+        </q-carousel-slide>
+      </template>
     </q-carousel>
   </div>
   <div class="banners">
@@ -108,19 +81,40 @@
           slide: ref(1)
         }
       },
+      data() {
+          return {
+            slideInfo: [
+              {
+                title: 'Побеждайте на работе.',
+                description: 'Razer Pro Click Mini',
+                pic: 'https://static.razer.ru/238400/pro-click-mini-gallery-1500x1000-6.jpg',
+                type: 'mouse'
+              },
+              {
+                title: 'Беспроводная. 65% формат. Ещё больше подсветки Razer Chroma™ RGB.',
+                description: 'Razer BlackWidow V3 Mini HyperSpeed — Phantom Edition',
+                pic: 'https://static.razer.ru/237614/blackwidow-v3-mini-hyperspeed-phantom-1500x1000-4.jpg',
+                type: 'keyboard'
+              },
+              {
+                title: 'Беспроводная киберспортивная гарнитура. Теперь и в белом.',
+                description: 'Razer BlackShark V2 Pro - White Edition',
+                pic: 'https://static.razer.ru/237701/blackshark-v2-pro-white-1500x1000-4.jpg',
+                type: 'headphones'
+              },
+              {
+                title: 'Выделись из толпы: Bluetooth-гарнитура с настраиваемой подсветкой Razer Chroma™ RGB и активным шумоподавлением ANC.',
+                description: 'Razer Hammerhead True Wireless (2021)',
+                pic: 'https://static.razer.ru/236989/hammerhead-true-wireless-1500x1000-2.jpg',
+                type: 'hammer'
+              },
+            ],
+          }
+      },
       methods:{
-        mouse(){
-          this.$router.push('/mouse')
+        showDetail(type){
+          this.$router.push({path: `/${type}`, })
         },
-        keyboard(){
-          this.$router.push('/keyboard')
-        },
-        headphones(){
-          this.$router.push('/headphones')
-        },
-        hammer(){
-          this.$router.push('/hammer')
-        }
       }
     })
 </script>

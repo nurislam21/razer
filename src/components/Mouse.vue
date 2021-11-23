@@ -22,7 +22,7 @@
   <div class="bgbuy">
     <div class="buy">
       <div class="buy-title">
-        <div class="buy-title-raz">Razer Pro Click Mini</div>
+        <div class="buy-title-raz"> {{products.title}}</div>
         <span>Артикул: RZ01-03990100-R3G1</span>
       </div>
       <div class="buy-price">
@@ -56,11 +56,17 @@
     </div>
   </div>
   <div class="text-one">
+<<<<<<< HEAD
     <h2 class="text-one-title">ПОБЕЖДАЙТЕ НА РАБОТЕ</h2>
     <div class="text-one-description">Сделайте мир своим офисом с Razer Pro Click Mini — идеальной мышью для эффективной
       работы в дороге. Благодаря бесшумным щелчкам и удобной форме в компактном корпусе этот маленький помощник идеально
       дополнит ваш рабочий день, где бы вы ни находились.
     </div>
+=======
+
+     <h2 class="text-one-title">ПОБЕЖДАЙТЕ НА РАБОТЕ</h2>
+    <div class="text-one-description">Сделайте мир своим офисом с Razer Pro Click Mini — идеальной мышью для эффективной работы в дороге. Благодаря бесшумным щелчкам и удобной форме в компактном корпусе этот маленький помощник идеально дополнит ваш рабочий день, где бы вы ни находились.</div>
+>>>>>>> 6255f1bfe09d9a7150ecbc8d8d9717ec57d8dc5d
 
     <h2 class="text-one-title">МАКСИМАЛЬНАЯ ПРОДУКТИВНОСТЬ. МИНИМАЛЬНЫЙ ШУМ</h2>
     <div class="text-one-description">Бесшумные механические переключатели этой мыши позволят вам и окружающим вас в
@@ -195,6 +201,43 @@
       return {
         slide: ref(1)
       }
+    },
+    data () {
+      return {
+        productType: '',
+        products: [
+          {
+            title: 'Razer Pro Click Mini',
+            articul: 'RZ01-03990100-R3G1',
+            price: '6 190',
+            type: 'mouse'
+          },
+          {
+            title: 'keyboard Razer Pro Click Mini',
+            articul: 'keyboard RZ01-03990100-R3G1',
+            price: '17 990',
+            type: 'keyboard'
+          },
+          {
+            title: 'Razer BlackShark V2 Pro - White Edition',
+            articul: 'RZ04-03220300-R3M1',
+            price: '16 990',
+            type: 'headphones'
+          },
+          {
+            title: 'Razer Hammerhead True Wireless (2021)',
+            articul: 'RZ12-03820100-R3G1',
+            price: '13 490',
+            type: 'hammer'
+          },
+        ]
+      }
+    },
+    computed: {
+    },
+    created() {
+      this.productType = this.$route.query.product
+      console.log(this.$route.query.product)
     }
   })
 </script>

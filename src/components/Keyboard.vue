@@ -208,6 +208,10 @@
         slide: ref(1, 'Rihanna'),
       }
     },
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6255f1bfe09d9a7150ecbc8d8d9717ec57d8dc5d
   })
 </script>
 
