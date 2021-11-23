@@ -1,59 +1,51 @@
 $lime: #0f0;
+$lime2: #268926;
+$lime3: #44d62c;
 $black: #000;
 $gray: #888;
+$gray2: #9a9a9a;
 $white: #ffff;
-$black2:#1f1f1f;
+$black2: #1f1f1f;
 .header-bg {
   width: 100%;
   background-color: $black;
   height: 100px;
+  position: relative;
 }
 
 .header {
   display: flex;
   justify-content: flex-end;
-
-  &-login {
-    color: $lime;
-    margin-top: 10px;
-    font-size: 12px;
-  }
-
-  &-and {
-    color: gray;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 10px;
-    font-size: 12px;
-  }
-
-  &-reg {
-    color: $lime;
-    margin-right: 300px;
-    font-size: 12px;
-    margin-top: 10px;
-  }
 }
 
 .navigation {
   display: flex;
   margin-top: 20px;
-  justify-content: space-evenly;
+  justify-content: space-around;
+
   &-logo {
     display: flex;
     justify-content: flex-start;
-    img{
+
+    img {
       width: 99px;
       height: 16px;
     }
   }
 
   &-panel {
+    position: absolute;
     display: flex;
     color: $gray;
     align-items: center;
+    justify-content: center;
+    right: 0;
+    left: 0;
+    top: 20px;
+
     p {
-      margin-right: 40px;
+      margin-right: 70px;
+      margin-left: 70px;
       transition-duration: 0.3s;
 
       &:hover {
@@ -66,6 +58,7 @@ $black2:#1f1f1f;
   &-icons {
     display: flex;
     justify-content: flex-end;
+
     img {
       width: 21px;
       height: 21px;
@@ -91,7 +84,7 @@ $black2:#1f1f1f;
     color: $gray;
     font-size: 36px;
     width: 60%;
-    font-family: RazerF5,serif;
+    font-family: RazerF5, serif;
     font-weight: 300;
   }
 
@@ -99,22 +92,25 @@ $black2:#1f1f1f;
     font-weight: 300;
     color: $white;
     font-size: 35px;
-    font-family: RazerF5,serif;
+    font-family: RazerF5, serif;
   }
 }
 
-.banners{
+.banners {
   display: flex;
-  &-item{
+
+  &-item {
     background-color: $black;
     width: 25%;
     position: relative;
     border: 3px solid darkgray;
-    img{
+
+    img {
       width: 100%;
       height: auto;
     }
-    &-text{
+
+    &-text {
       text-align: center;
       position: absolute;
       bottom: 0;
@@ -122,113 +118,1387 @@ $black2:#1f1f1f;
       background-color: $black;
       width: 100%;
     }
-    &-title{
+
+    &-title {
       color: $gray;
       font-size: 19px;
     }
-    &-description{
+
+    &-description {
       color: $lime;
       font-size: 19px;
     }
   }
 }
 
-.footer{
+.footer {
   display: flex;
   background-color: $black2;
   width: 100%;
   padding: 3.125rem 0.625rem;
   justify-content: space-evenly;
-  &-column1{
-    &-one{
-      div{
+
+  &-column1 {
+    &-one {
+      div {
         color: $white;
-        font-size:16px;
+        font-size: 16px;
         transition-duration: 0.3s;
-        &:hover{
+
+        &:hover {
           color: $lime;
           cursor: pointer;
         }
       }
-      span{
+
+      span {
         color: $gray;
       }
     }
-    &-two{
+
+    &-two {
       display: flex;
       flex-direction: column;
-      div{
+
+      div {
         color: $white;
-        font-size:16px;
+        font-size: 16px;
         margin-top: 20px;
         transition-duration: 0.3s;
-        &:hover{
+
+        &:hover {
           color: $lime;
           cursor: pointer;
         }
       }
-      span{
+
+      span {
         color: $gray;
       }
     }
   }
-  &-column2{
+
+  &-column2 {
     display: flex;
     flex-direction: column;
-    div{
+
+    div {
       color: $white;
       font-size: 16px;
     }
-    span{
+
+    span {
       color: $gray;
       margin-top: 10px;
       transition-duration: 0.2s;
-      &:hover{
+
+      &:hover {
         color: $white;
         cursor: pointer;
       }
     }
   }
-  &-column3{
+
+  &-column3 {
     display: flex;
     flex-direction: column;
-    div{
+
+    div {
       color: $white;
       font-size: 16px;
     }
-    span{
+
+    span {
       color: $gray;
       margin-top: 10px;
       transition-duration: 0.2s;
-      &:hover{
+
+      &:hover {
         color: $white;
         cursor: pointer;
       }
     }
   }
-  &-column4{
+
+  &-column4 {
     display: flex;
     flex-direction: column;
-    p{
+
+    p {
       color: $white;
       font-size: 16px;
     }
-    img{
+
+    img {
       width: 21px;
       height: 20px;
     }
-    span{
+
+    span {
       margin-left: 5px;
       color: $gray;
       transition-duration: 0.2s;
-      &:hover{
+
+      &:hover {
         color: $white;
         cursor: pointer;
       }
     }
-    &-item{
+
+    &-item {
       display: flex;
       margin-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .header-bg {
+    width: 100%;
+    background-color: $black;
+    height: 100px;
+    position: relative;
+  }
+
+  .header {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navigation {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    &-logo {
+      display: flex;
+      justify-content: flex-start;
+
+      img {
+        width: 99px;
+        height: 16px;
+      }
+    }
+
+    &-panel {
+      position: absolute;
+      display: flex;
+      color: $gray;
+      align-items: center;
+      justify-content: center;
+      right: 0;
+      left: 0;
+      top: 20px;
+
+      p {
+        transition-duration: 0.3s;
+        margin-left: 50px;
+        margin-right: 50px;
+        &:hover {
+          color: $lime;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &-icons {
+      display: flex;
+      justify-content: flex-end;
+
+      img {
+        width: 21px;
+        height: 21px;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .text {
+    background: linear-gradient(180deg, #000, rgba(0, 0, 0, 0));
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: 3;
+
+    &-title {
+      color: $gray;
+      font-size: 36px;
+      width: 60%;
+      font-family: RazerF5, serif;
+      font-weight: 300;
+    }
+
+    &-description {
+      font-weight: 300;
+      color: $white;
+      font-size: 35px;
+      font-family: RazerF5, serif;
+    }
+  }
+
+  .banners {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-item {
+      background-color: $black;
+      width: 50%;
+      position: relative;
+      border: 3px solid darkgray;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      &-text {
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        z-index: 3;
+        background-color: $black;
+        width: 100%;
+      }
+
+      &-title {
+        color: $gray;
+        font-size: 19px;
+      }
+
+      &-description {
+        color: $lime;
+        font-size: 19px;
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    background-color: $black2;
+    width: 100%;
+    padding: 3.125rem 0.625rem;
+    justify-content: space-evenly;
+
+    &-column1 {
+      &-one {
+        div {
+          color: $white;
+          font-size: 16px;
+          transition-duration: 0.3s;
+
+          &:hover {
+            color: $lime;
+            cursor: pointer;
+          }
+        }
+
+        span {
+          color: $gray;
+        }
+      }
+
+      &-two {
+        display: flex;
+        flex-direction: column;
+
+        div {
+          color: $white;
+          font-size: 16px;
+          margin-top: 20px;
+          transition-duration: 0.3s;
+
+          &:hover {
+            color: $lime;
+            cursor: pointer;
+          }
+        }
+
+        span {
+          color: $gray;
+        }
+      }
+    }
+
+    &-column2 {
+      display: flex;
+      flex-direction: column;
+
+      div {
+        color: $white;
+        font-size: 16px;
+      }
+
+      span {
+        color: $gray;
+        margin-top: 10px;
+        transition-duration: 0.2s;
+
+        &:hover {
+          color: $white;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &-column3 {
+      display: flex;
+      flex-direction: column;
+
+      div {
+        color: $white;
+        font-size: 16px;
+      }
+
+      span {
+        color: $gray;
+        margin-top: 10px;
+        transition-duration: 0.2s;
+
+        &:hover {
+          color: $white;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &-column4 {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        color: $white;
+        font-size: 16px;
+        margin: 0 0 16px;
+      }
+
+      img {
+        width: 21px;
+        height: 20px;
+      }
+
+      span {
+        margin-left: 5px;
+        color: $gray;
+        transition-duration: 0.2s;
+
+        &:hover {
+          color: $white;
+          cursor: pointer;
+        }
+      }
+
+      &-item {
+        display: flex;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+  .header-bg {
+    width: 100%;
+    background-color: $black;
+    height: 100px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navigation {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+
+    &-logo {
+      display: flex;
+      justify-content: flex-start;
+
+      img {
+        width: 99px;
+        height: 16px;
+      }
+    }
+
+    &-panel {
+      display: flex;
+      color: $gray;
+      align-items: center;
+      background-color: $black2;
+      margin-top: 30px;
+      position: absolute;
+      width: 100%;
+      height: 50px;
+
+      p {
+        transition-duration: 0.3s;
+        margin: 50px;
+        &:hover {
+          color: $lime;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &-icons {
+      display: flex;
+      justify-content: flex-end;
+
+      img {
+        width: 21px;
+        height: 21px;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .text {
+    background: linear-gradient(180deg, #000, rgba(0, 0, 0, 0));
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: 3;
+
+    &-title {
+      color: $gray;
+      font-size: 36px;
+      width: 60%;
+      font-family: RazerF5, serif;
+      font-weight: 300;
+    }
+
+    &-description {
+      font-weight: 300;
+      color: $white;
+      font-size: 35px;
+      font-family: RazerF5, serif;
+    }
+  }
+
+  .banners {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-item {
+      background-color: $black;
+      width: 50%;
+      position: relative;
+      border: 3px solid darkgray;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      &-text {
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        z-index: 3;
+        background-color: $black;
+        width: 100%;
+      }
+
+      &-title {
+        color: $gray;
+        font-size: 19px;
+      }
+
+      &-description {
+        color: $lime;
+        font-size: 19px;
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    background-color: $black2;
+    width: 100%;
+    padding: 3.125rem 0.625rem;
+    justify-content: space-evenly;
+
+    &-column1 {
+      &-one {
+        div {
+          color: $white;
+          font-size: 16px;
+          transition-duration: 0.3s;
+
+          &:hover {
+            color: $lime;
+            cursor: pointer;
+          }
+        }
+
+        span {
+          color: $gray;
+        }
+      }
+
+      &-two {
+        display: flex;
+        flex-direction: column;
+
+        div {
+          color: $white;
+          font-size: 16px;
+          margin-top: 20px;
+          transition-duration: 0.3s;
+
+          &:hover {
+            color: $lime;
+            cursor: pointer;
+          }
+        }
+
+        span {
+          color: $gray;
+        }
+      }
+    }
+
+    &-column2 {
+      display: flex;
+      flex-direction: column;
+
+      div {
+        color: $white;
+        font-size: 16px;
+      }
+
+      span {
+        color: $gray;
+        margin-top: 10px;
+        transition-duration: 0.2s;
+
+        &:hover {
+          color: $white;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &-column3 {
+      display: flex;
+      flex-direction: column;
+
+      div {
+        color: $white;
+        font-size: 16px;
+      }
+
+      span {
+        color: $gray;
+        margin-top: 10px;
+        transition-duration: 0.2s;
+
+        &:hover {
+          color: $white;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &-column4 {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        color: $white;
+        font-size: 16px;
+        margin: 0 0 16px;
+      }
+
+      img {
+        width: 21px;
+        height: 20px;
+      }
+
+      span {
+        margin-left: 5px;
+        color: $gray;
+        transition-duration: 0.2s;
+
+        &:hover {
+          color: $white;
+          cursor: pointer;
+        }
+      }
+
+      &-item {
+        display: flex;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) and (min-width: 376px) {
+  .header-bg {
+    width: 100%;
+    background-color: $black;
+    height: 100px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navigation {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+
+    &-logo {
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 20px;
+
+      img {
+        width: 99px;
+        height: 16px;
+      }
+    }
+
+    &-panel {
+      display: flex;
+      color: $gray;
+      align-items: center;
+      background-color: $black2;
+      margin-top: 30px;
+      position: absolute;
+      padding: 0 30px;
+      width: 100%;
+      height: 50px;
+
+      p {
+        margin: 40px;
+        transition-duration: 0.3s;
+
+        &:hover {
+          color: $lime;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &-icons {
+      display: flex;
+      justify-content: flex-end;
+
+      img {
+        width: 21px;
+        height: 21px;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .text {
+    background: linear-gradient(180deg, #000, rgba(0, 0, 0, 0));
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: 3;
+
+    &-title {
+      color: $gray;
+      font-size: 24px;
+      width: 100%;
+      font-family: RazerF5, serif;
+      font-weight: 300;
+    }
+
+    &-description {
+      font-weight: 300;
+      color: $white;
+      font-size: 35px;
+      font-family: RazerF5, serif;
+    }
+  }
+
+  .banners {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &-item {
+      background-color: $black;
+      width: 100%;
+      position: relative;
+      border: 3px solid darkgray;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      &-text {
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        z-index: 3;
+        background-color: $black;
+        width: 100%;
+      }
+
+      &-title {
+        color: $gray;
+        font-size: 19px;
+      }
+
+      &-description {
+        color: $lime;
+        font-size: 19px;
+      }
+    }
+  }
+
+  .footer {
+    display: none;
+    background-color: $black2;
+    width: 100%;
+    padding: 3.125rem 0.625rem;
+    justify-content: space-evenly;
+
+    &-column1 {
+      &-one {
+        div {
+          color: $white;
+          font-size: 16px;
+          transition-duration: 0.3s;
+
+          &:hover {
+            color: $lime;
+            cursor: pointer;
+          }
+        }
+
+        span {
+          color: $gray;
+        }
+      }
+
+      &-two {
+        display: flex;
+        flex-direction: column;
+
+        div {
+          color: $white;
+          font-size: 16px;
+          margin-top: 20px;
+          transition-duration: 0.3s;
+
+          &:hover {
+            color: $lime;
+            cursor: pointer;
+          }
+        }
+
+        span {
+          color: $gray;
+        }
+      }
+    }
+
+    &-column2 {
+      display: flex;
+      flex-direction: column;
+
+      div {
+        color: $white;
+        font-size: 16px;
+      }
+
+      span {
+        color: $gray;
+        margin-top: 10px;
+        transition-duration: 0.2s;
+
+        &:hover {
+          color: $white;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &-column3 {
+      display: flex;
+      flex-direction: column;
+
+      div {
+        color: $white;
+        font-size: 16px;
+      }
+
+      span {
+        color: $gray;
+        margin-top: 10px;
+        transition-duration: 0.2s;
+
+        &:hover {
+          color: $white;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &-column4 {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        color: $white;
+        font-size: 16px;
+        margin: 0 0 16px;
+      }
+
+      img {
+        width: 21px;
+        height: 20px;
+      }
+
+      span {
+        margin-left: 5px;
+        color: $gray;
+        transition-duration: 0.2s;
+
+        &:hover {
+          color: $white;
+          cursor: pointer;
+        }
+      }
+
+      &-item {
+        display: flex;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) and (min-width: 321px) {
+  .header-bg {
+    width: 100%;
+    background-color: $black;
+    height: 100px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navigation {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+
+    &-logo {
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 20px;
+
+      img {
+        width: 99px;
+        height: 16px;
+      }
+    }
+
+    &-panel {
+      display: flex;
+      color: $gray;
+      align-items: center;
+      background-color: $black2;
+      margin-top: 30px;
+      position: absolute;
+      padding: 0 30px;
+      width: 100%;
+      height: 50px;
+
+      p {
+        margin: 30px;
+        transition-duration: 0.3s;
+
+        &:hover {
+          color: $lime;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &-icons {
+      display: flex;
+      justify-content: flex-end;
+
+      img {
+        width: 21px;
+        height: 21px;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .text {
+    background: linear-gradient(180deg, #000, rgba(0, 0, 0, 0));
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: 3;
+
+    &-title {
+      color: $gray;
+      font-size: 24px;
+      width: 100%;
+      font-family: RazerF5, serif;
+      font-weight: 300;
+    }
+
+    &-description {
+      font-weight: 300;
+      color: $white;
+      font-size: 35px;
+      font-family: RazerF5, serif;
+    }
+  }
+
+  .banners {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &-item {
+      background-color: $black;
+      width: 100%;
+      position: relative;
+      border: 3px solid darkgray;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      &-text {
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        z-index: 3;
+        background-color: $black;
+        width: 100%;
+      }
+
+      &-title {
+        color: $gray;
+        font-size: 19px;
+      }
+
+      &-description {
+        color: $lime;
+        font-size: 19px;
+      }
+    }
+  }
+
+  .footer {
+    display: none;
+    background-color: $black2;
+    width: 100%;
+    padding: 3.125rem 0.625rem;
+    justify-content: space-evenly;
+
+    &-column1 {
+      &-one {
+        div {
+          color: $white;
+          font-size: 16px;
+          transition-duration: 0.3s;
+
+          &:hover {
+            color: $lime;
+            cursor: pointer;
+          }
+        }
+
+        span {
+          color: $gray;
+        }
+      }
+
+      &-two {
+        display: flex;
+        flex-direction: column;
+
+        div {
+          color: $white;
+          font-size: 16px;
+          margin-top: 20px;
+          transition-duration: 0.3s;
+
+          &:hover {
+            color: $lime;
+            cursor: pointer;
+          }
+        }
+
+        span {
+          color: $gray;
+        }
+      }
+    }
+
+    &-column2 {
+      display: flex;
+      flex-direction: column;
+
+      div {
+        color: $white;
+        font-size: 16px;
+      }
+
+      span {
+        color: $gray;
+        margin-top: 10px;
+        transition-duration: 0.2s;
+
+        &:hover {
+          color: $white;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &-column3 {
+      display: flex;
+      flex-direction: column;
+
+      div {
+        color: $white;
+        font-size: 16px;
+      }
+
+      span {
+        color: $gray;
+        margin-top: 10px;
+        transition-duration: 0.2s;
+
+        &:hover {
+          color: $white;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &-column4 {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        color: $white;
+        font-size: 16px;
+        margin: 0 0 16px;
+      }
+
+      img {
+        width: 21px;
+        height: 20px;
+      }
+
+      span {
+        margin-left: 5px;
+        color: $gray;
+        transition-duration: 0.2s;
+
+        &:hover {
+          color: $white;
+          cursor: pointer;
+        }
+      }
+
+      &-item {
+        display: flex;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .header-bg {
+    width: 100%;
+    background-color: $black;
+    height: 100px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navigation {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+
+    &-logo {
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 20px;
+
+      img {
+        width: 99px;
+        height: 16px;
+      }
+    }
+
+    &-panel {
+      display: flex;
+      color: $gray;
+      align-items: center;
+      background-color: $black2;
+      margin-top: 30px;
+      position: absolute;
+      padding: 0 30px;
+      width: 100%;
+      height: 50px;
+
+      p {
+        margin-top: 10px;
+        transition-duration: 0.3s;
+
+        &:hover {
+          color: $lime;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &-icons {
+      display: flex;
+      justify-content: flex-end;
+
+      img {
+        width: 21px;
+        height: 21px;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .text {
+    background: linear-gradient(180deg, #000, rgba(0, 0, 0, 0));
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: 3;
+
+    &-title {
+      color: $gray;
+      font-size: 20px;
+      width: 100%;
+      font-family: RazerF5, serif;
+      font-weight: 300;
+    }
+
+    &-description {
+      font-weight: 300;
+      color: $white;
+      font-size: 24px;
+      font-family: RazerF5, serif;
+    }
+  }
+
+  .banners {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &-item {
+      background-color: $black;
+      width: 100%;
+      position: relative;
+      border: 3px solid darkgray;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      &-text {
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        z-index: 3;
+        background-color: $black;
+        width: 100%;
+      }
+
+      &-title {
+        color: $gray;
+        font-size: 19px;
+      }
+
+      &-description {
+        color: $lime;
+        font-size: 19px;
+      }
+    }
+  }
+
+  .footer {
+    display: none;
+    background-color: $black2;
+    width: 100%;
+    padding: 3.125rem 0.625rem;
+    justify-content: space-evenly;
+
+    &-column1 {
+      &-one {
+        div {
+          color: $white;
+          font-size: 16px;
+          transition-duration: 0.3s;
+
+          &:hover {
+            color: $lime;
+            cursor: pointer;
+          }
+        }
+
+        span {
+          color: $gray;
+        }
+      }
+
+      &-two {
+        display: flex;
+        flex-direction: column;
+
+        div {
+          color: $white;
+          font-size: 16px;
+          margin-top: 20px;
+          transition-duration: 0.3s;
+
+          &:hover {
+            color: $lime;
+            cursor: pointer;
+          }
+        }
+
+        span {
+          color: $gray;
+        }
+      }
+    }
+
+    &-column2 {
+      display: flex;
+      flex-direction: column;
+
+      div {
+        color: $white;
+        font-size: 16px;
+      }
+
+      span {
+        color: $gray;
+        margin-top: 10px;
+        transition-duration: 0.2s;
+
+        &:hover {
+          color: $white;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &-column3 {
+      display: flex;
+      flex-direction: column;
+
+      div {
+        color: $white;
+        font-size: 16px;
+      }
+
+      span {
+        color: $gray;
+        margin-top: 10px;
+        transition-duration: 0.2s;
+
+        &:hover {
+          color: $white;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &-column4 {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        color: $white;
+        font-size: 16px;
+        margin: 0 0 16px;
+      }
+
+      img {
+        width: 21px;
+        height: 20px;
+      }
+
+      span {
+        margin-left: 5px;
+        color: $gray;
+        transition-duration: 0.2s;
+
+        &:hover {
+          color: $white;
+          cursor: pointer;
+        }
+      }
+
+      &-item {
+        display: flex;
+        margin-bottom: 10px;
+      }
     }
   }
 }
