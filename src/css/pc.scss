@@ -16,6 +16,9 @@ $black2: #1f1f1f;
     height: 272px;
     text-align: center;
     padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     div{
       color: $lime;
       font-size: 24px;
@@ -23,6 +26,8 @@ $black2: #1f1f1f;
     p{
       color: $gray;
       font-size: 19px;
+      width: 50%;
+      text-align: center;
     }
   }
   &-blocks{
@@ -36,6 +41,7 @@ $black2: #1f1f1f;
     }
     &-blocks1{
       background-image: url("../assets/s1-b1-Des.jpg");
+      background-size: cover;
       width: 530px;
       height: 588px;
       margin-right: 15px;
@@ -53,6 +59,7 @@ $black2: #1f1f1f;
     &-blocks2{
 
       background-image: url("../assets/audio-category-558x587-desktop.jpg");
+      background-size: cover;
       width: 530px;
       height: 588px;
       margin-bottom: 15px;
@@ -68,6 +75,7 @@ $black2: #1f1f1f;
     }
     &-blocks3{
       background-image: url("../assets/s1-b2-Des.jpg");
+      background-size: cover;
       width: 530px;
       height: 588px;
       text-align: center;
@@ -81,6 +89,7 @@ $black2: #1f1f1f;
     }
     &-blocks4{
       background-image: url("../assets/mousemats-category-558x587-desktop.jpg");
+      background-size: cover;
       width: 530px;
       height: 588px;
       text-align: center;
@@ -99,6 +108,9 @@ $black2: #1f1f1f;
     height: 700px;
     text-align: center;
     padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &-title{
       color: $white;
       font-size: 24px;
@@ -107,7 +119,7 @@ $black2: #1f1f1f;
       color: $white;
       font-size: 16px;
       margin-top: 10px;
-
+      width: 600px;
     }
     &-info{
       color: $lime3;
@@ -147,6 +159,853 @@ $black2: #1f1f1f;
         color: white;
         font-size: 22px;
         padding-top: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) and (min-width: 1025px){
+  .pc{
+    background-color: $black;
+    width: 100%;
+    &-text{
+      background-color: #111;
+      width: 100%;
+      height: 272px;
+      text-align: center;
+      padding-top: 130px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      div{
+        color: $lime;
+        font-size: 24px;
+      }
+      p{
+        color: $gray;
+        font-size: 19px;
+        width: 50%;
+        text-align: center;
+      }
+    }
+    &-blocks{
+      display: flex;
+      padding-top: 100px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      &-blockss{
+
+      }
+      &-blocks1{
+        background-image: url("../assets/s1-b1-Des.jpg");
+        background-size: cover;
+        width: 530px;
+        height: 588px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        transition-duration: 0.4s;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+      &-blocks2{
+
+        background-image: url("../assets/audio-category-558x587-desktop.jpg");
+        background-size: cover;
+        width: 530px;
+        height: 588px;
+        margin-bottom: 15px;
+        transition-duration: 0.4s;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+      &-blocks3{
+        background-image: url("../assets/s1-b2-Des.jpg");
+        background-size: cover;
+        width: 530px;
+        height: 588px;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+      &-blocks4{
+        background-image: url("../assets/mousemats-category-558x587-desktop.jpg");
+        background-size: cover;
+        width: 530px;
+        height: 588px;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+    }
+    &-kresla{
+      background-image: url("../assets/ssstul.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 750px;
+      text-align: center;
+      padding-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &-title{
+        color: $white;
+        font-size: 24px;
+      }
+      &-description{
+        color: $white;
+        font-size: 16px;
+        margin-top: 10px;
+        width: 600px;
+      }
+      &-info{
+        color: $lime3;
+        font-size: 15px;
+        margin-top: 20px;
+      }
+    }
+    &-cards{
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      &-card{
+        background-image: url("../assets/530x580-pp-desktops-and-cases-banner-desktop.jpg");
+        width: 530px;
+        height: 588px;
+        margin-right: 15px;
+        transition-duration: 0.4s;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+      &-card1{
+        background-image: url("../assets/530x580-pp-gamepads-banner-desktop.jpg");
+        width: 530px;
+        height: 588px;
+        margin-right: 15px;
+        transition-duration: 0.4s;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) and (min-width: 769px){
+  .pc{
+    background-color: $black;
+    width: 100%;
+    &-text{
+      background-color: #111;
+      width: 100%;
+      height: 272px;
+      text-align: center;
+      padding-top: 130px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      div{
+        color: $lime;
+        font-size: 24px;
+      }
+      p{
+        color: $gray;
+        font-size: 19px;
+        width: 100%;
+      }
+    }
+    &-blocks{
+      display: flex;
+      padding-top: 100px;
+      &-blockss{
+        display: flex;
+      }
+      &-blocks1{
+        background-image: url("../assets/s1-b1-Des.jpg");
+        background-size: cover;
+        width: 460px;
+        height: 510px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        transition-duration: 0.4s;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+      &-blocks2{
+
+        background-image: url("../assets/audio-category-558x587-desktop.jpg");
+        background-size: cover;
+        width: 460px;
+        height: 510px;
+        margin-bottom: 15px;
+        transition-duration: 0.4s;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+      &-blocks3{
+        background-image: url("../assets/s1-b2-Des.jpg");
+        background-size: cover;
+        width: 460px;
+        height: 510px;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+      &-blocks4{
+        background-image: url("../assets/mousemats-category-558x587-desktop.jpg");
+        background-size: cover;
+        width: 460px;
+        height: 510px;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+    }
+    &-kresla{
+      background-image: url("../assets/stuls.png");
+      width: 100%;
+      height: 485px;
+      text-align: center;
+      padding-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &-title{
+        color: $white;
+        font-size: 24px;
+      }
+      &-description{
+        color: $white;
+        font-size: 16px;
+        margin-top: 10px;
+        width: 590px;
+      }
+      &-info{
+        color: $lime3;
+        font-size: 15px;
+        margin-top: 20px;
+      }
+    }
+    &-cards{
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      &-card{
+        background-image: url("../assets/530x580-pp-desktops-and-cases-banner-desktop.jpg");
+        width: 460px;
+        height: 510px;
+        background-size: cover;
+        margin-right: 15px;
+        transition-duration: 0.4s;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) and (min-width: 426px){
+  .pc{
+    background-color: $black;
+    width: 100%;
+    &-text{
+      background-color: #111;
+      width: 100%;
+      height: 272px;
+      text-align: center;
+      padding-top: 130px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      div{
+        color: $lime;
+        font-size: 24px;
+      }
+      p{
+        color: $gray;
+        font-size: 19px;
+        width: 100%;
+      }
+    }
+    &-blocks{
+      display: flex;
+      padding-top: 100px;
+      &-blockss{
+        display: flex;
+      }
+      &-blocks1{
+        background-image: url("../assets/s1-b1-Des.jpg");
+        background-size: cover;
+        width: 340px;
+        height: 377px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        transition-duration: 0.4s;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+      &-blocks2{
+
+        background-image: url("../assets/audio-category-558x587-desktop.jpg");
+        background-size: cover;
+        width: 340px;
+        height: 377px;
+        margin-bottom: 15px;
+        transition-duration: 0.4s;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+      &-blocks3{
+        background-image: url("../assets/s1-b2-Des.jpg");
+        background-size: cover;
+        width: 340px;
+        height: 377px;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+      &-blocks4{
+        background-image: url("../assets/mousemats-category-558x587-desktop.jpg");
+        background-size: cover;
+        width: 340px;
+        height: 377px;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+    }
+    &-kresla{
+      background-image: url("../assets/da.png");
+      width: 100%;
+      height: 440px;
+      text-align: center;
+      padding-top: 30px;
+      &-title{
+        color: $white;
+        font-size: 20px;
+      }
+      &-description{
+        color: $white;
+        font-size: 14px;
+        margin-top: 10px;
+        width: 550px;
+      }
+      &-info{
+        color: $lime3;
+        font-size: 15px;
+        margin-top: 20px;
+      }
+    }
+    &-cards{
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      &-card{
+        background-image: url("../assets/530x580-pp-desktops-and-cases-banner-desktop.jpg");
+        width: 340px;
+        height: 377px;
+        background-size: cover;
+        margin-right: 15px;
+        transition-duration: 0.4s;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 425px) and (min-width: 376px){
+  .pc{
+    background-color: $black;
+    width: 100%;
+    &-text{
+      background-color: #111;
+      width: 100%;
+      height: 272px;
+      text-align: center;
+      padding-top: 130px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      div{
+        color: $lime;
+        font-size: 22px;
+      }
+      p{
+        color: $gray;
+        font-size: 16px;
+        width: 100%;
+      }
+    }
+    &-blocks{
+      display: flex;
+      padding-top: 100px;
+      &-blockss{
+        display: flex;
+      }
+      &-blocks1{
+        background-image: url("../assets/s1-b1-Des.jpg");
+        background-size: cover;
+        width: 340px;
+        height: 377px;
+        margin-right: 0px;
+        margin-bottom: 15px;
+        transition-duration: 0.4s;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+      &-blocks2{
+
+        background-image: url("../assets/audio-category-558x587-desktop.jpg");
+        background-size: cover;
+        width: 340px;
+        height: 377px;
+        margin-bottom: 15px;
+        transition-duration: 0.4s;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+      &-blocks3{
+        background-image: url("../assets/s1-b2-Des.jpg");
+        background-size: cover;
+        width: 340px;
+        height: 377px;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+      &-blocks4{
+        background-image: url("../assets/mousemats-category-558x587-desktop.jpg");
+        background-size: cover;
+        width: 340px;
+        height: 377px;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+    }
+    &-kresla{
+      background-image: url("../assets/stul3.png");
+      width: 100%;
+      height: 426px;
+      text-align: center;
+      padding-top: 30px;
+      &-title{
+        color: $white;
+        font-size: 20px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 16px;
+        margin-top: 10px;
+        width: 300px;
+      }
+      &-info{
+        color: $lime3;
+        font-size: 15px;
+        margin-top: 20px;
+      }
+    }
+    &-cards{
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      &-card{
+        background-image: url("../assets/530x580-pp-desktops-and-cases-banner-desktop.jpg");
+        width: 340px;
+        height: 377px;
+        background-size: cover;
+        margin-right: 15px;
+        transition-duration: 0.4s;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 375px) and (min-width: 321px){
+  .pc{
+    background-color: $black;
+    width: 100%;
+    &-text{
+      background-color: #111;
+      width: 100%;
+      height: 272px;
+      text-align: center;
+      padding-top: 130px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      div{
+        color: $lime;
+        font-size: 24px;
+      }
+      p{
+        color: $gray;
+        font-size: 19px;
+        width: 100%;
+      }
+    }
+    &-blocks{
+      display: flex;
+      padding-top: 100px;
+      &-blockss{
+        display: flex;
+      }
+      &-blocks1{
+        background-image: url("../assets/s1-b1-Des.jpg");
+        background-size: cover;
+        width: 340px;
+        height: 377px;
+        margin-right: 0;
+        margin-bottom: 15px;
+        transition-duration: 0.4s;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+      &-blocks2{
+
+        background-image: url("../assets/audio-category-558x587-desktop.jpg");
+        background-size: cover;
+        width: 340px;
+        height: 377px;
+        margin-bottom: 15px;
+        transition-duration: 0.4s;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+      &-blocks3{
+        background-image: url("../assets/s1-b2-Des.jpg");
+        background-size: cover;
+        width: 340px;
+        height: 377px;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+      &-blocks4{
+        background-image: url("../assets/mousemats-category-558x587-desktop.jpg");
+        background-size: cover;
+        width: 340px;
+        height: 377px;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+    }
+    &-kresla{
+      background-image: url("../assets/stul4.png");
+      width: 100%;
+      height: 335px;
+      text-align: center;
+      padding-top: 0;
+        &-title{
+        color: $white;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 14px;
+        margin-top: 10px;
+        width: 330px;
+      }
+      &-info{
+        color: $lime3;
+        font-size: 15px;
+        margin-top: 20px;
+      }
+    }
+    &-cards{
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      &-card{
+        background-image: url("../assets/530x580-pp-desktops-and-cases-banner-desktop.jpg");
+        width: 340px;
+        height: 377px;
+        background-size: cover;
+        margin-right: 15px;
+        transition-duration: 0.4s;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 320px){
+  .pc{
+    background-color: $black;
+    width: 100%;
+    &-text{
+      background-color: #111;
+      width: 100%;
+      height: 272px;
+      text-align: center;
+      padding-top: 130px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      div{
+        color: $lime;
+        font-size: 22px;
+      }
+      p{
+        color: $gray;
+        font-size: 15px;
+        width: 100%;
+      }
+    }
+    &-blocks{
+      display: flex;
+      padding-top: 100px;
+      &-blockss{
+        display: flex;
+      }
+      &-blocks1{
+        background-image: url("../assets/s1-b1-Des.jpg");
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+        margin-right: 0;
+        transition-duration: 0.4s;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+      &-blocks2{
+
+        background-image: url("../assets/audio-category-558x587-desktop.jpg");
+        background-size: cover;
+        width: 300px;
+        height: 300px;;
+        transition-duration: 0.4s;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+      &-blocks3{
+        background-image: url("../assets/s1-b2-Des.jpg");
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+      &-blocks4{
+        background-image: url("../assets/mousemats-category-558x587-desktop.jpg");
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
+      }
+    }
+    &-kresla{
+      background-image: url("../assets/ssss.png");
+      width: 100%;
+      height: 333px;
+      text-align: center;
+      padding-top: 30px;
+      &-title{
+        color: $white;
+        font-size: 20px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 14px;
+        margin-top: 10px;
+        width: 300px;
+      }
+      &-info{
+        color: $lime3;
+        font-size: 15px;
+        margin-top: 10px;
+      }
+    }
+    &-cards{
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      &-card{
+        background-image: url("../assets/530x580-pp-desktops-and-cases-banner-desktop.jpg");
+        width: 340px;
+        height: 377px;
+        background-size: cover;
+        margin-right: 15px;
+        transition-duration: 0.4s;
+        text-align: center;
+        color: $lime3;
+        div{
+          text-align: center;
+          color: white;
+          font-size: 22px;
+          padding-top: 40px;
+        }
       }
     }
   }

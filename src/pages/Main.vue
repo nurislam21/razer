@@ -1,5 +1,5 @@
 <template>
-<Header style="position: fixed; z-index: 5"/>
+<Header style="position: fixed; z-index: 99"/>
   <div class="q-pa-md">
     <q-carousel
       style="height: 700px"

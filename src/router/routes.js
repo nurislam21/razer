@@ -58,6 +58,10 @@ const routes = [
     path:'/pc/gaming-cases',
     component: () => import('components/Cases')
   },
+  {
+    path:'/store',
+    component: () => import('components/Store')
+  },
   // Always leave this as last one,
   // but you can also remove it
   {

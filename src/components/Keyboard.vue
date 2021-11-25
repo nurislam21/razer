@@ -79,28 +79,11 @@
       <img src="../assets/keyboard.png" alt="">
     </div>
     <div class="q-pa-md q-gutter-sm">
-      <q-carousel
-        animated
-        v-model="slide"
-        infinite
-      >
-        <q-carousel-slide name="Rihanna">
-          <q-video
-            class="absolute-full"
-            src="https://www.youtube.com/embed/kOkQ4T5WO9E"
-          />
-        </q-carousel-slide>
-      </q-carousel>
-
-      <div class="row justify-center">
-        <q-btn-toggle
-          glossy
-          v-model="slide"
-          :options="[
-          { label: 'Rihanna', value: 'Rihanna' },
-        ]"
-        />
-      </div>
+      <q-video
+      class="absolute-full"
+      src="https://www.youtube.com/watch?v=Ybp9NsmTA2o"
+      />
+    </div>
     </div>
     <div class="texts-text">
       <div class="texts-lime">65% ФОРМ-ФАКТОР</div>
@@ -167,7 +150,6 @@
       </div>
       <img src="../assets/blackwidow-v3-mini-hyperspeed-keycaps-sideprints-desktop.jpg" alt="">
     </div>
-  </div>
   <div class="specifications">
     <h4 class="specifications-title">ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</h4>
     <div class="specifications-li">
@@ -208,10 +190,6 @@
         slide: ref(1, 'Rihanna'),
       }
     },
-<<<<<<< HEAD
-=======
-
->>>>>>> 6255f1bfe09d9a7150ecbc8d8d9717ec57d8dc5d
   })
 </script>
 

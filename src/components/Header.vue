@@ -11,17 +11,15 @@
         <img src="../assets/asd.png" alt="">
         <div @click="basket" >
           <img src="../assets/basket.svg" alt="">
-
         </div>
       </div>
     </div>
     <div class="navigation-panel">
       <p @click="pc">ПК</p>
       <p @click="kresla">Лайфстайл</p>
-      <p>Магазин</p>
+      <p @click="store">Магазин</p>
     </div>
   </div>
-
 </template>
 
 <script>
@@ -38,8 +36,8 @@
         kresla(){
             this.$router.push('/pc/gaming-chairs')
         },
-        razer(){
-            this.$router.push('/')
+        store(){
+            this.$router.push('/store')
         }
       }
     })
