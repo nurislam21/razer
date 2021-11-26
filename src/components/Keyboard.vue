@@ -78,15 +78,10 @@
       <div class="texts-keyboard-description">RAZER BLACKWIDOW V3 MINI HYPERSPEED - PHANTOM EDITION</div>
       <img src="../assets/keyboard.png" alt="">
     </div>
-    <div class="q-pa-md q-gutter-sm">
-      <q-video
-      class="absolute-full"
-      src="https://www.youtube.com/watch?v=Ybp9NsmTA2o"
-      />
-    </div>
+    <iframe width="100%" height="700" src="https://www.youtube.com/embed/bJkhA_18FAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="texts-text">
-      <div class="texts-lime">65% ФОРМ-ФАКТОР</div>
+      <div style="margin-top: 0; padding-top: 50px;" class="texts-lime">65% ФОРМ-ФАКТОР</div>
       <div class="texts-keyboard-title">Для элегантной и компактной производительности</div>
       <div class="texts-gray">Без функционального ряда, домашнего кластера и цифрового блока, эта клавиатура похожа на
         60% клавиатуру, но с одним
@@ -112,7 +107,7 @@
         устройствах Razer HyperSpeed.
       </div>
     </div>
-    <div class="texts-icons">
+    <div style=" background-color:#111;" class="texts-icons">
       <div style="margin-top: 10px;" class="texts-lime">3 ВИДА ПОДКЛЮЧЕНИЯ</div>
       <div class="texts-cocacola">
         <div class="texts-icons-item">
@@ -132,16 +127,16 @@
         </div>
       </div>
     </div>
-    <div class="texts-keyboardmouse">
-      <div class="texts-lime">ПОДДЕРЖКА НЕСКОЛЬКИХ УСТРОЙСТВ RAZER™ HYPERSPEED</div>
-      <div class="texts-gray">Оптимизируйте свой сетап и освободите порт USB, подключив беспроводную мышь и клавиатуру
+    <div style=" background-color:#111;" class="texts-keyboardmouse">
+      <div class="texts-lime" style="margin-top: 0; padding-top: 50px;">ПОДДЕРЖКА НЕСКОЛЬКИХ УСТРОЙСТВ RAZER™ HYPERSPEED</div>
+      <div class="texts-gray" style="padding-bottom: 40px;">Оптимизируйте свой сетап и освободите порт USB, подключив беспроводную мышь и клавиатуру
         через один адаптер - функцию,
         <br> которую можно активировать в нашей последней линейке беспроводных устройств с поддержкой Razer HyperSpeed.
       </div>
       <img src="../assets/mishka.png" alt="">
     </div>
-    <div class="texts-keyboardmouse">
-      <div class="texts-lime">КОЛПАЧКИ КЛАВИШ С БОКОВОЙ РАЗМЕТКОЙ</div>
+    <div style="background: #111" class="texts-keyboardmouse">
+      <div class="texts-lime" style="margin-top: 0;padding-top: 50px;">КОЛПАЧКИ КЛАВИШ С БОКОВОЙ РАЗМЕТКОЙ</div>
       <div style="margin-bottom: 40px;" class="texts-gray">Выберите модель клавиатуры с колпачками клавиш, которые
         подойдут вам, оба варианта кейкапов оснащены боковой
         <br> разметкой дополнительных функций для более удобного использования при выполнении команд и ориентирования в
@@ -173,7 +168,6 @@
   </div>
   <Footer/>
 </template>
-
 <script>
   import Header from "./Header";
   import Footer from "./Footer";
