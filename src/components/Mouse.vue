@@ -29,7 +29,7 @@
         <div class="buy-price-rub">6 190 <img src="../assets/rub.svg" alt=""></div>
       </div>
       <div class="buy-btn">
-        <p>В КОРЗИНУ</p>
+        <p @click="addtoCart">В КОРЗИНУ</p>
       </div>
       <div class="buy-razer">
         <img src="../assets/heart.svg" alt="">
@@ -55,6 +55,7 @@
       </div>
     </div>
   </div>
+
   <div class="text-one">
     <h2 class="text-one-title">ПОБЕЖДАЙТЕ НА РАБОТЕ</h2>
     <div class="text-one-description">Сделайте мир своим офисом с Razer Pro Click Mini — идеальной мышью для эффективной
@@ -62,8 +63,6 @@
       дополнит ваш рабочий день, где бы вы ни находились.
     </div>
 
-     <h2 class="text-one-title">ПОБЕЖДАЙТЕ НА РАБОТЕ</h2>
-    <div class="text-one-description">Сделайте мир своим офисом с Razer Pro Click Mini — идеальной мышью для эффективной работы в дороге. Благодаря бесшумным щелчкам и удобной форме в компактном корпусе этот маленький помощник идеально дополнит ваш рабочий день, где бы вы ни находились.</div>
     <h2 class="text-one-title">МАКСИМАЛЬНАЯ ПРОДУКТИВНОСТЬ. МИНИМАЛЬНЫЙ ШУМ</h2>
     <div class="text-one-description">Бесшумные механические переключатели этой мыши позволят вам и окружающим вас в
       офисе или дома работать в тишине без отвлекающих факторов, а ее сверхпрочная конструкция обеспечит ресурс до 15
@@ -201,6 +200,14 @@
     data () {
       return {
         productType: '',
+        mouse:{
+          title: 'Razer Pro Click Mini',
+          articul: 'RZ01-03990100-R3G1',
+          price: '6190',
+          type: 'mouse',
+          img:'../assets/mouseimg.png',
+          id: 1
+        },
         products: [
           {
             title: 'Razer Pro Click Mini',
@@ -234,6 +241,12 @@
     created() {
       this.productType = this.$route.query.product
       console.log(this.$route.query.product)
+    },
+    methods:{
+      addtoCart:function () {
+        this.$store.dispatch('cart/addtoCart',this.mouse)
+        this.$router.push('/basket')
+      }
     }
   })
 </script>

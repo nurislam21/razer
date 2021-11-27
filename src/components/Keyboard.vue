@@ -35,7 +35,7 @@
         <div class="buy-price-rub">17 990 <img src="../assets/rub.svg" alt=""></div>
       </div>
       <div class="buy-btn">
-        <p>В КОРЗИНУ</p>
+        <p @click="addtoCart">В КОРЗИНУ</p>
       </div>
       <div class="buy-razer">
         <img src="../assets/heart.svg" alt="">
@@ -175,6 +175,18 @@
 
   export default defineComponent({
     name: "Keyboard",
+    data(){
+      return{
+        keyboard:{
+          title: 'Keyboard Razer Pro Click Mini',
+          articul: 'RZ01-03990100-R3G1',
+          price: '17990',
+          type: 'keyboard',
+          img:'../assets/keyboardimg.png',
+          id: 2
+        },
+      }
+    },
     components: {
       Header,
       Footer
@@ -184,6 +196,12 @@
         slide: ref(1, 'Rihanna'),
       }
     },
+    methods:{
+      addtoCart:function () {
+        this.$store.dispatch('cart/addtoCart',this.keyboard);
+        this.$router.push('/basket')
+      }
+    }
   })
 </script>
 
