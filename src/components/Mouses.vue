@@ -4,7 +4,7 @@
     <div class="cards-img">
       <div class="cards-img-title">ИГРОВЫЕ МЫШИ</div>
       <div class="cards-img-description">От лучшей эргономики до конструкции специально разработанной для жанров FPS или MOBA, выбирайте из полного спектра
-        <br> игровых мышей, готовых повысить Ваш уровень игрового процесса.</div>
+      игровых мышей, готовых повысить Ваш уровень игрового процесса.</div>
     </div>
     <div class="cards__container">
     <div class="cards-card">

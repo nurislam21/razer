@@ -13,8 +13,7 @@ $black2: #1f1f1f;
 
   &__container{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+
     width: 77%;
     margin: 0 auto;
   }
@@ -187,4 +186,1100 @@ $black2: #1f1f1f;
     }
   }
 }
+@media (max-width: 2560px) and (min-width: 1441px){
+  .cards{
+    background-color: #2c2c2c;
+    width: 100%;
 
+    &__container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 60%;
+      margin: 0 auto;
+    }
+    &-img{
+      background-image: url("../assets/main-desktop-basilisk-v3.jpg");
+      width: 100%;
+      height: 700px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+        width: 880px;
+      }
+    }
+    &-img2{
+      background-image: url("../assets/main-desktop-barracuda-x.jpg");
+      width: 100%;
+      height: 700px;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+      }
+    }
+    &-img3{
+      background-image: url("../assets/1920x700-blackwidow-v3-pro.jpg");
+      width: 100%;
+      height: 700px;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+      }
+    }
+    &-img4{
+      background-image: url("../assets/goliathus-mobile-usp-01-v2.jpg");
+      width: 100%;
+      height: 700px;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+      }
+    }
+    &-img5{
+      background-image: url("../assets/1920x700-razer-iskur-x-desktop.jpg");
+      width: 100%;
+      height: 700px;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $black2;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+      }
+    }
+    &-img6{
+      background-color: #111;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+        padding-bottom: 20px;
+      }
+    }
+    &-card{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 12px;
+      padding-top: 20px;
+      &-img{
+        background-color: $black;
+        width: 344px;
+        height: 234px;
+        display: flex;
+        justify-content: center;
+        img{
+          width: 285px;
+          height: 200px;
+        }
+      }
+      &-text{
+        background-color: #111;
+        width: 344px;
+        height: 211px;
+        border-bottom: 1px solid $lime;
+        padding: 6px;
+        &-title{
+          color: $white;
+          transition-duration: 0.3s;
+          &:hover{
+            color: $lime;
+          }
+        }
+        &-description{
+          color: $gray;
+          font-size: 12px;
+          margin-top: 5px;
+        }
+
+        &-price{
+          display: flex;
+          justify-content: space-between;
+          margin-top: 60px;
+          &-title{
+            color:$gray;
+            div{
+              color: $white;
+            }
+          }
+          &-info{
+            background-color: $lime;
+            border-radius: 5px;
+            width: 150px;
+            height: 40px;
+            min-width: 150px;
+            transition-duration: 0.2s;
+
+            &:hover {
+              background-color: $lime2;
+            }
+
+            p {
+              display: flex;
+              justify-content: center;
+              padding: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px){
+  .cards{
+    background-color: #2c2c2c;
+    width: 100%;
+
+    &__container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 77%;
+      margin: 0 auto;
+    }
+    &-img{
+      background-image: url("../assets/mousedesktop1.png");
+      width: 100%;
+      height: 700px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+        width: 880px;
+      }
+    }
+    &-img2{
+      background-image: url("../assets/main-desktop-barracuda-x.jpg");
+      width: 100%;
+      height: 700px;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+      }
+    }
+    &-img3{
+      background-image: url("../assets/1920x700-blackwidow-v3-pro.jpg");
+      width: 100%;
+      height: 700px;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+      }
+    }
+    &-img4{
+      background-image: url("../assets/goliathus-mobile-usp-01-v2.jpg");
+      width: 100%;
+      height: 700px;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+      }
+    }
+    &-img5{
+      background-image: url("../assets/1920x700-razer-iskur-x-desktop.jpg");
+      width: 100%;
+      height: 700px;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $black2;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+      }
+    }
+    &-img6{
+      background-color: #111;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+        padding-bottom: 20px;
+      }
+    }
+    &-card{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 12px;
+      padding-top: 20px;
+      &-img{
+        background-color: $black;
+        width: 344px;
+        height: 234px;
+        display: flex;
+        justify-content: center;
+        img{
+          width: 285px;
+          height: 200px;
+        }
+      }
+      &-text{
+        background-color: #111;
+        width: 344px;
+        height: 211px;
+        border-bottom: 1px solid $lime;
+        padding: 6px;
+        &-title{
+          color: $white;
+          transition-duration: 0.3s;
+          &:hover{
+            color: $lime;
+          }
+        }
+        &-description{
+          color: $gray;
+          font-size: 12px;
+          margin-top: 5px;
+        }
+
+        &-price{
+          display: flex;
+          justify-content: space-between;
+          margin-top: 60px;
+          &-title{
+            color:$gray;
+            div{
+              color: $white;
+            }
+          }
+          &-info{
+            background-color: $lime;
+            border-radius: 5px;
+            width: 150px;
+            height: 40px;
+            min-width: 150px;
+            transition-duration: 0.2s;
+
+            &:hover {
+              background-color: $lime2;
+            }
+
+            p {
+              display: flex;
+              justify-content: center;
+              padding: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) and (min-width: 769px){
+  .cards{
+    background-color: #2c2c2c;
+    width: 100%;
+
+    &__container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 77%;
+      margin: 0 auto;
+    }
+    &-img{
+      background-image: url("../assets/mousedesktop2.png");
+      width: 100%;
+      height: 700px;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+      }
+    }
+    &-img2{
+      background-image: url("../assets/main-desktop-barracuda-x.jpg");
+      width: 100%;
+      height: 700px;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+      }
+    }
+    &-img3{
+      background-image: url("../assets/1920x700-blackwidow-v3-pro.jpg");
+      width: 100%;
+      height: 700px;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+      }
+    }
+    &-img4{
+      background-image: url("../assets/goliathus-mobile-usp-01-v2.jpg");
+      width: 100%;
+      height: 700px;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+      }
+    }
+    &-img5{
+      background-image: url("../assets/1920x700-razer-iskur-x-desktop.jpg");
+      width: 100%;
+      height: 700px;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $black2;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+      }
+    }
+    &-img6{
+      background-color: #111;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+        padding-bottom: 20px;
+      }
+    }
+    &-card{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 12px;
+      padding-top: 20px;
+      &-img{
+        background-color: $black;
+        width: 344px;
+        height: 234px;
+        display: flex;
+        justify-content: center;
+        img{
+          width: 285px;
+          height: 200px;
+        }
+      }
+      &-text{
+        background-color: #111;
+        width: 344px;
+        height: 211px;
+        border-bottom: 1px solid $lime;
+        padding: 6px;
+        &-title{
+          color: $white;
+          transition-duration: 0.3s;
+          &:hover{
+            color: $lime;
+          }
+        }
+        &-description{
+          color: $gray;
+          font-size: 12px;
+          margin-top: 5px;
+        }
+
+        &-price{
+          display: flex;
+          justify-content: space-between;
+          margin-top: 60px;
+          &-title{
+            color:$gray;
+            div{
+              color: $white;
+            }
+          }
+          &-info{
+            background-color: $lime;
+            border-radius: 5px;
+            width: 150px;
+            height: 40px;
+            min-width: 150px;
+            transition-duration: 0.2s;
+
+            &:hover {
+              background-color: $lime2;
+            }
+
+            p {
+              display: flex;
+              justify-content: center;
+              padding: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) and (min-width: 426px){
+  .cards{
+    background-color: #2c2c2c;
+    width: 100%;
+
+    &__container{
+      display: flex;
+      width: 77%;
+      margin: 0 auto;
+      overflow-x: scroll;
+    }
+    &-img{
+      background-image: url("../assets/mousedesktop3.png");
+      width: 100%;
+      height: 537px;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+      }
+    }
+    &-img2{
+      background-image: url("../assets/main-desktop-barracuda-x.jpg");
+      width: 100%;
+      height: 700px;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+      }
+    }
+    &-img3{
+      background-image: url("../assets/1920x700-blackwidow-v3-pro.jpg");
+      width: 100%;
+      height: 700px;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+      }
+    }
+    &-img4{
+      background-image: url("../assets/goliathus-mobile-usp-01-v2.jpg");
+      width: 100%;
+      height: 700px;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+      }
+    }
+    &-img5{
+      background-image: url("../assets/1920x700-razer-iskur-x-desktop.jpg");
+      width: 100%;
+      height: 700px;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $black2;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+      }
+    }
+    &-img6{
+      background-color: #111;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+        padding-bottom: 20px;
+      }
+    }
+    &-card{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 12px;
+      padding-top: 20px;
+      &-img{
+        background-color: $black;
+        width: 344px;
+        height: 234px;
+        display: flex;
+        justify-content: center;
+        img{
+          width: 285px;
+          height: 200px;
+        }
+      }
+      &-text{
+        background-color: #111;
+        width: 344px;
+        height: 211px;
+        border-bottom: 1px solid $lime;
+        padding: 6px;
+        &-title{
+          color: $white;
+          transition-duration: 0.3s;
+          &:hover{
+            color: $lime;
+          }
+        }
+        &-description{
+          color: $gray;
+          font-size: 12px;
+          margin-top: 5px;
+        }
+
+        &-price{
+          display: flex;
+          justify-content: space-between;
+          margin-top: 60px;
+          &-title{
+            color:$gray;
+            div{
+              color: $white;
+            }
+          }
+          &-info{
+            background-color: $lime;
+            border-radius: 5px;
+            width: 150px;
+            height: 40px;
+            min-width: 150px;
+            transition-duration: 0.2s;
+
+            &:hover {
+              background-color: $lime2;
+            }
+
+            p {
+              display: flex;
+              justify-content: center;
+              padding: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 425px) and (min-width: 376px){
+  .cards{
+    background-color: #2c2c2c;
+    width: 100%;
+
+    &__container{
+      display: flex;
+      overflow-x: scroll;
+      width: 77%;
+      margin: 0 auto;
+    }
+    &-img{
+      background-image: url("../assets/mousedesktop4.png");
+      width: 100%;
+      height:483px;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+      }
+    }
+    &-img2{
+      background-image: url("../assets/main-desktop-barracuda-x.jpg");
+      width: 100%;
+      height: 700px;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+      }
+    }
+    &-img3{
+      background-image: url("../assets/1920x700-blackwidow-v3-pro.jpg");
+      width: 100%;
+      height: 700px;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+      }
+    }
+    &-img4{
+      background-image: url("../assets/goliathus-mobile-usp-01-v2.jpg");
+      width: 100%;
+      height: 700px;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+      }
+    }
+    &-img5{
+      background-image: url("../assets/1920x700-razer-iskur-x-desktop.jpg");
+      width: 100%;
+      height: 700px;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $black2;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+      }
+    }
+    &-img6{
+      background-color: #111;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+        padding-bottom: 20px;
+      }
+    }
+    &-card{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 12px;
+      padding-top: 20px;
+      &-img{
+        background-color: $black;
+        width: 344px;
+        height: 234px;
+        display: flex;
+        justify-content: center;
+        img{
+          width: 285px;
+          height: 200px;
+        }
+      }
+      &-text{
+        background-color: #111;
+        width: 344px;
+        height: 211px;
+        border-bottom: 1px solid $lime;
+        padding: 6px;
+        &-title{
+          color: $white;
+          transition-duration: 0.3s;
+          &:hover{
+            color: $lime;
+          }
+        }
+        &-description{
+          color: $gray;
+          font-size: 12px;
+          margin-top: 5px;
+        }
+
+        &-price{
+          display: flex;
+          justify-content: space-between;
+          margin-top: 60px;
+          &-title{
+            color:$gray;
+            div{
+              color: $white;
+            }
+          }
+          &-info{
+            background-color: $lime;
+            border-radius: 5px;
+            width: 150px;
+            height: 40px;
+            min-width: 150px;
+            transition-duration: 0.2s;
+
+            &:hover {
+              background-color: $lime2;
+            }
+
+            p {
+              display: flex;
+              justify-content: center;
+              padding: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 375px) and (min-width: 320px){
+  .cards{
+    background-color: #2c2c2c;
+    width: 100%;
+
+    &__container{
+      display: flex;
+      overflow-x: scroll;
+      width: 77%;
+      margin: 0 auto;
+    }
+    &-img{
+      background-image: url("../assets/mousedesktop5.png");
+      width: 100%;
+      height:483px;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+      }
+    }
+    &-img2{
+      background-image: url("../assets/main-desktop-barracuda-x.jpg");
+      width: 100%;
+      height: 700px;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+      }
+    }
+    &-img3{
+      background-image: url("../assets/1920x700-blackwidow-v3-pro.jpg");
+      width: 100%;
+      height: 700px;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+      }
+    }
+    &-img4{
+      background-image: url("../assets/goliathus-mobile-usp-01-v2.jpg");
+      width: 100%;
+      height: 700px;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+      }
+    }
+    &-img5{
+      background-image: url("../assets/1920x700-razer-iskur-x-desktop.jpg");
+      width: 100%;
+      height: 700px;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $black2;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+      }
+    }
+    &-img6{
+      background-color: #111;
+      text-align: center;
+      &-title{
+        padding-top: 120px;
+        font-family: RazerF5,serif;
+        color: $lime;
+        font-size: 24px;
+      }
+      &-description{
+        color: $gray;
+        font-size: 19px;
+        font-family: RazerF5,serif;
+        padding-bottom: 20px;
+      }
+    }
+    &-card{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 12px;
+      padding-top: 20px;
+      &-img{
+        background-color: $black;
+        width: 344px;
+        height: 234px;
+        display: flex;
+        justify-content: center;
+        img{
+          width: 285px;
+          height: 200px;
+        }
+      }
+      &-text{
+        background-color: #111;
+        width: 344px;
+        height: 211px;
+        border-bottom: 1px solid $lime;
+        padding: 6px;
+        &-title{
+          color: $white;
+          transition-duration: 0.3s;
+          &:hover{
+            color: $lime;
+          }
+        }
+        &-description{
+          color: $gray;
+          font-size: 12px;
+          margin-top: 5px;
+        }
+
+        &-price{
+          display: flex;
+          justify-content: space-between;
+          margin-top: 60px;
+          &-title{
+            color:$gray;
+            div{
+              color: $white;
+            }
+          }
+          &-info{
+            background-color: $lime;
+            border-radius: 5px;
+            width: 150px;
+            height: 40px;
+            min-width: 150px;
+            transition-duration: 0.2s;
+
+            &:hover {
+              background-color: $lime2;
+            }
+
+            p {
+              display: flex;
+              justify-content: center;
+              padding: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

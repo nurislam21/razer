@@ -42,7 +42,7 @@
       </div>
       <div v-for="(item,idx) in cart" :key="idx" class="purchase-block">
         <div class="purchase-block-img">
-          <img :src="item.img" alt="">
+          <img :src="item.image" alt="">
         </div>
         <div class="purchase-block-text">
           <div class="purchase-block-text-title">{{item.title}}

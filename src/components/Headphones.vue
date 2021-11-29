@@ -29,7 +29,7 @@
         <div class="buy-price-rub">16 990 <img src="../assets/rub.svg" alt=""></div>
       </div>
       <div class="buy-btn">
-        <p>В КОРЗИНУ</p>
+        <p @click="addtoCart">В КОРЗИНУ</p>
       </div>
       <div class="buy-razer">
         <img src="../assets/heart.svg" alt="">
@@ -202,6 +202,24 @@
 
   export default defineComponent({
     name: "Headphones",
+    data(){
+      return{
+        headphone:{
+          title: 'Razer BlackShark V2 Pro - White Edition',
+          articul: 'RZ04-03220300-R3M1',
+          price: '16 990',
+          type: 'headphones',
+          image:'../assets/headphoneimg.png',
+          id:3
+        },
+      }
+    },
+    methods:{
+      addtoCart:function () {
+        this.$store.dispatch('cart/addtoCart',this.headphone);
+        this.$router.push('/basket')
+      }
+    },
     components: {
       Header,
       Footer

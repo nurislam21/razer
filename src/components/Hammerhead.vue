@@ -29,7 +29,7 @@
         <div class="buy-price-rub">13 490 <img src="../assets/rub.svg" alt=""></div>
       </div>
       <div class="buy-btn">
-        <p>В КОРЗИНУ</p>
+        <p @click="addtoCart">В КОРЗИНУ</p>
       </div>
       <div class="buy-razer">
         <img src="../assets/heart.svg" alt="">
@@ -154,17 +154,8 @@
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
   <Footer />
 </template>
-
 <script>
   import Header from "./Header";
   import Footer from "./Footer";
@@ -172,6 +163,24 @@
 
   export default defineComponent({
     name: "Hammerhead",
+    data(){
+      return{
+        hammerhead:{
+          title: 'Razer Hammerhead True Wireless (2021)',
+          articul: 'RZ12-03820100-R3G1',
+          price: '13 490',
+          type: 'hammer',
+          image:'../assets/800x600-razer-hammerhead-true-wireless-2021-product-promo.png\n',
+          id:4
+        },
+      }
+    },
+    methods:{
+      addtoCart:function () {
+        this.$store.dispatch('cart/addtoCart',this.hammerhead);
+        this.$router.push('/basket')
+      }
+    },
     components: {
       Header,
       Footer

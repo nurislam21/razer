@@ -178,11 +178,11 @@
     data(){
       return{
         keyboard:{
-          title: 'Keyboard Razer Pro Click Mini',
+          title: 'Razer BlackWidow V3 Mini HyperSpeed (Green Switch) Phantom Edition',
           articul: 'RZ01-03990100-R3G1',
           price: '17990',
           type: 'keyboard',
-          img:'../assets/keyboardimg.png',
+          image:'../assets/keyboardimg.png',
           id: 2
         },
       }

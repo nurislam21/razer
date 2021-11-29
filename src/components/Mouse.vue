@@ -205,7 +205,7 @@
           articul: 'RZ01-03990100-R3G1',
           price: '6190',
           type: 'mouse',
-          img:'../assets/mouseimg.png',
+          image:'../assets/mouseimg.png',
           id: 1
         },
         products: [
