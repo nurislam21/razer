@@ -182,7 +182,7 @@
           articul: 'RZ01-03990100-R3G1',
           price: '17990',
           type: 'keyboard',
-          image:'../assets/keyboardimg.png',
+          image:'https://static.razer.ru/235656/800x600-razer-blackwidow-v3-mini-hyperspeed-product-promo.png',
           id: 2
         },
       }

@@ -170,7 +170,7 @@
           articul: 'RZ12-03820100-R3G1',
           price: '13 490',
           type: 'hammer',
-          image:'../assets/800x600-razer-hammerhead-true-wireless-2021-product-promo.png\n',
+          image:'https://static.razer.ru/232442/800x600-razer-hammerhead-true-wireless-pro-black-product-promo.png',
           id:4
         },
       }

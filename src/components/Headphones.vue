@@ -209,7 +209,7 @@
           articul: 'RZ04-03220300-R3M1',
           price: '16 990',
           type: 'headphones',
-          image:'../assets/headphoneimg.png',
+          image:'https://static.razer.ru/237696/800x600-razer-blackshark-v2-pro-white-product-promo.png',
           id:3
         },
       }
